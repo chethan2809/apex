@@ -1,0 +1,159 @@
+<template>
+    <lightning-card>
+        <div class="slds-modal__header">
+            <h2 class="slds-modal__title slds-hyphenate slds-text-heading--medium">
+                New Payment Arrangement
+            </h2>
+        </div>
+        <div if:true={isLoading} class="slds-is-relative">
+            <lightning-spinner
+                alternative-text="Loading..." variant="brand">
+            </lightning-spinner>
+        </div>
+        <div class="form-bgcolor slds-var-p-around_small">
+            <lightning-record-edit-form object-api-name="Collection_Case__c" record-id={recordId}>
+                <div class="slds-p-left_small slds-p-right_small slds-p-top_small">
+                    <div class="slds-grid slds-wrap slds-gutters slds-p-left_small slds-p-right_small slds-p-top_small">
+                        <div class="slds-grid slds-gutter">
+                            <div data-name="validation-div" class="slds-col slds-p-right_small slds-size_1-of-1 slds-hide slds-align_absolute-center">
+                                <span class="validation-msg">{validationErrorMessage}</span>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Name" disabled>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Frequency__c" disabled>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Total_Unpaid_Due_Amount_To_Current__c" data-name="totalUnpaidDue" disabled>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Total_Outstanding_Repayment_Amount__c" data-name="totalOutstandingAmt" disabled>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Payment_Amount__c" disabled>
+                            </lightning-input-field>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+            <lightning-record-edit-form data-name="paymentArrangement" object-api-name="Payment_Arrangements__c" onsubmit={handleSubmit} onsuccess={handleSuccess}>
+                <div class="slds-p-bottom_small slds-p-left_small slds-p-right_small">
+                    <div class="slds-grid slds-wrap slds-gutters slds-p-left_small slds-p-right_small">
+                        <div class="slds-col slds-size_1-of-2 slds-hide">
+                            <lightning-input-field field-name="Collection_Case__c" name="collectionCaseId" value={recordId}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-hide">
+                            <lightning-input-field field-name="Total_Outstanding_Repayment_Amount__c" name="totalOutstandingAmt" value={totalOutstandingAmount}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-hide">
+                            <lightning-input-field field-name="Total_Unpaid_Due_Amount_To_Current__c" name="totalUnpaidAmount" value={totalUnpaidDueAmount}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Payment_Arrangement_Type__c" name="arrangementType" required onchange={handleArrangementType}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Payment_Mode__c" name="paymentMode" data-name="paymentMode" required onchange={handlePaymentModeChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Promise__c" name="promise" data-name="promise" required>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Bank_Account__c" name="bankAccountName" value={bankAccountName} requuired disabled>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Amount__c" name="amount" required onchange={handleAmountChange} autocomplete="none">
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Debit_Date__c" name="debitDate" class="non-ach" required={nonAchRequired} date-style="short" onchange={handleDebitDate}>
+                            </lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-section slds-hide" data-name="aps-section">
+                        <h3 class="test-id__section-header-container slds-section__title" onclick={handleSection}>
+                            <button class="test-id__section-header-button slds-section__title-action slds-button">
+                                <span class="test-id__section-header-icon slds-icon_container slds-m-right_x-small">
+                                    <lightning-icon icon-name={sectionIcon} size="xx-small"></lightning-icon>
+                                </span>
+                                <span class="test-id__section-header-title slds-truncate">
+                                    APS
+                                </span>
+                            </button>
+                        </h3>
+                        <div class="slds-grid slds-wrap slds-gutters slds-p-top_small slds-p-left_small slds-p-right_small" data-name="aps-detail-section">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-input-field field-name="Automatically_Enable_Default_APS__c" name="enableDefaultAPS" class="forAccommodation slds-hide">
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Type__c" name="type" required={achRequired} onchange={handleTypeChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Setup_Date__c" name="setupDate" disabled value={currentSystemDate} date-style="short">
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 recurring-ach">
+                                <lightning-input-field field-name="Frequency__c" name="frequency" data-name="frequency" required={achRequired} onchange={handleFrequencyChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 recurring-ach">
+                                <lightning-input-field field-name="Amount_Type__c" name="amountType" required={achRequired} onchange={handleAmountType} disabled>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 recurring-ach">
+                                <lightning-input-field field-name="Recurring_ACH_Start_Date__c" name="recurringStartDate" data-name="recurringStartDate" date-style="short" required={achRequired} onchange={handleACHStartDate}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 recurring-ach">
+                                <lightning-input-field field-name="Recurring_ACH_End_Date__c" name="recurringEndDate" data-name="recurringEndDate" date-style="short" required={achRequired} onchange={handleACHEndDate}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Transaction_Amount__c" name="transactionAmtACH" required={oneTimeRequired} onchange={handleAchTransactionAmt}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Debit_Date__c" name="debitDateACH" date-style="short" required={oneTimeRequired} onchange={handleAchDebitDate} class="achDebitDate">
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Occurrence__c" data-name="occurrence" disabled>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="APS_Total_Payable_Amount__c" data-name="apsTotalPayableAmt" disabled>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Debit_Day__c" name="debitDay" class="slds-hide">
+                                </lightning-input-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_12-of-12 slds-align_absolute-center slds-p-bottom_small">
+                    <lightning-button variant="brand" data-name="submitButton" type="submit" name="save" label="Save">
+                    </lightning-button>
+                    <div class="slds-p-left_small">
+                        <lightning-button class="slds-m-top_small" variant="brand" name="close" label="Close" onclick={closeModal}>
+                        </lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

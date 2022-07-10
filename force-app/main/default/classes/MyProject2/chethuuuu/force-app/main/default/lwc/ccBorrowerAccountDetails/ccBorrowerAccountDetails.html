@@ -1,0 +1,25 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-wrap slds-gutters slds-p-around_small">
+            <div class="slds-col slds-size_1-of-2">
+                Account Name<br/>
+                <lightning-formatted-url value={accountId} label={accountName} tooltip={accountName} target="_parent"></lightning-formatted-url>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                Phone<br/>
+                {accountPhone}
+            </div>
+            <div class="slds-col slds-p-top_medium">
+                Billing Address<br/>
+                <lightning-formatted-address
+                    street={billingStreet}
+                    city= {billingCity}
+                    country={billingCountry}
+                    province={billingState}
+                    postal-code={billingPostalCode}>
+                </lightning-formatted-address>
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>

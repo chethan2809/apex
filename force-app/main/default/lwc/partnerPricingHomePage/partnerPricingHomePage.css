@@ -1,0 +1,50 @@
+lightning-button.offerButton {
+    --slds-c-button-brand-color-background: #9817b5;
+    --slds-c-button-brand-color-border: #9817b5;
+    --slds-c-button-brand-color-background-hover: #5b0e6c;
+    --slds-c-button-brand-color-border-hover: #5b0e6c;
+    --slds-c-button-brand-color-background-active: #9817b5;
+    --slds-c-button-brand-text-color: white;
+    --slds-c-button-sizing-border: 0;
+}
+
+lightning-button.exitButton {
+    --slds-c-button-inverse-color-background: white;
+    --slds-c-button-inverse-color-border: #9817b5;
+    --slds-c-button-inverse-color-border-active: #9817b5;
+    --slds-c-button-inverse-text-color: #9817b5;
+    --slds-c-button-inverse-text-color-active: #9817b5;
+    --slds-c-button-inverse-text-color-hover: #9817b5;
+    --slds-c-button-inverse-color-background-hover: white;
+}
+
+.mainTitleBanner {
+    margin: 0 0 10 0;
+    padding: 20px;
+    background-color: #5b0e6c;
+    color: #fff;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.mainTitle {
+    font-size: 22px;
+    padding-right: 140px;
+}
+
+.mainTitleLogo {
+    max-width: 70%;
+    height: auto;
+    padding-top: 8px;
+}
+
+.subTitle {
+    color: #767676;
+    font-size: 18px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+.detail{
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    border-radius: 4px;
+}

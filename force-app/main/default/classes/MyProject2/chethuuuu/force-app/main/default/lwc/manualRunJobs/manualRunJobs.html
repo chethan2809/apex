@@ -1,0 +1,32 @@
+<template>
+    <div>
+        <lightning-card>
+            <template if:true={isError}>
+                <c-error-panel errors={errors}></c-error-panel>
+            </template>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+            </template>
+            <lightning-layout>
+                <lightning-layout-item size="6">
+                    <lightning-card title="Jobs to run" icon-name="custom:custom63">
+                        <div class="slds-m-vertical_medium" style="padding: 10px;">
+                            <lightning-combobox name="jobs" label="Jobs" value={value} placeholder="Select Jobs"
+                                options={jobOptions} onchange={selectJobsChangeHandler}>
+                            </lightning-combobox>
+                            <lightning-input label="Batch Size" name="BatchSize" type="number" value={batchSize}
+                                onchange={onBatchSizeChange} max=2000 min=1>
+                            </lightning-input>
+                        </div>
+
+                        <div class="slds-m-vertical_medium" style="padding: 10px;">
+                            <lightning-button variant="success" label="Submit" title="Run job" onclick={submitHandleClickHandler}
+                                class="slds-m-left_x-small" disabled={disableSubmit}>
+                            </lightning-button>
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-card>
+    </div>
+</template>

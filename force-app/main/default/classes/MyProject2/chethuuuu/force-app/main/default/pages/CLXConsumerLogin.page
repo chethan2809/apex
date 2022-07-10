@@ -1,0 +1,45 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" controller="clcommon.PortalActions">
+    <apex:include pageName="clcommon__ResolveNamespace"/>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>                
+          
+         <style>
+         div[data-style-id=app] [data-style-actor-name=ApplicationFlow] [data-style-id=steps] [data-style-id=steps] .MuiStepper-alternativeLabel{
+             display:flex!important;
+         }
+         
+         [data-style-actor-name="ApplicationFlow"] [data-style-id="steps"]:first-child .MuiStepper-alternativeLabel{
+             display:none!important;
+         }
+            [data-style-actor-name="header"].actor-wrapper{
+            margin:0px 15%!important;
+            }
+            [data-style-actor-name="header"] .MuiButtonBase-root{
+                position: absolute;
+    right: 0;
+    top: 0;
+            }
+        </style> 
+             <!--<apex:variable var="c" value="https://localhost:3000/assets/css/style.min.css" rendered="{!$CurrentPage.parameters.env=='test'}"/>-->
+            <apex:variable var="c" value="{!URLFOR($Resource.clx_consumer_portal)}" rendered="{!$CurrentPage.parameters.env!='test'}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.clx_consumer_portal)}"/>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXB8MS1fMMXwu99qZAmuB5MU0_mTtfpWI&libraries=geometry,places"></script>          
+            <clcommon:IncludePortal2 navName="clx_consumer_mobile_first_apply" theme="mui" showDefaultLoadingPage="true"> </clcommon:IncludePortal2>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+            <script>
+                (portalext => {
+                  
+                  portalext.confirmAge = (dateValue, minAge) => {
+                  
+                    if (moment) {
+                      const years = moment().diff(dateValue, "years", false);
+                      return years >= minAge;
+                    } else {
+                      return false;
+                    }
+                  };
+                })((window.portalext = window.portalext || {}));
+            </script>
+</apex:page>

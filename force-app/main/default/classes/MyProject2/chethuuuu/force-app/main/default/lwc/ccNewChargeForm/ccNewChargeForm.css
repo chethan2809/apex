@@ -1,0 +1,11 @@
+.label-style {
+    color: #3e3e3c;
+}
+
+.form-bgcolor{
+    background-color: #ffff;
+}
+
+.slds-form-element__icon {
+    display: none !important;
+}

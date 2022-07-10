@@ -1,0 +1,112 @@
+<template>
+    <div class="slds-grid slds-wrap detail slds-var-p-around_x-small">
+        <div class="slds-col slds-size_12-of-12 header">
+            Application Summary
+        </div>
+        <div class="slds-col slds-size_6-of-12 view-label">
+            Application ID
+        </div>
+        <div class="slds-col slds-size_6-of-12 view-value">
+            {applicationName}
+        </div>
+        <div class="slds-col slds-size_6-of-12 view-label">
+            Borrower Name
+        </div>
+        <div class="slds-col slds-size_6-of-12 view-value">
+            {borrowerName}
+        </div>
+    </div>
+    <div class="slds-p-top_xx-small">
+        <div class="slds-grid slds-wrap detail slds-var-p-around_x-small">
+            <div class="slds-col slds-size_12-of-12 header">
+                Available Offers
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Loan Amount
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Selected_Amount__c} format-style="currency" currency-code="USD"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Term
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Term__c}
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Buy Rate
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Buy_Rate__c}
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Pricing Factor
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Pricing_Factor__c}
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Origination Fee %
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Origination_Fee_Percentage__c}
+                    format-style="decimal" maximum-fraction-digits="2"></lightning-formatted-number>%
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Origination Fee $
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Origination_Fee_Amount__c} format-style="currency" currency-code="USD"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Payment Frequency
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Payment_Frequency__c}
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                # of Payments
+            </div>
+            <div if:true={isDailyFrequency} class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Number_Of_Daily_Payments__c}
+            </div>
+            <div if:false={isDailyFrequency} class="slds-col slds-size_6-of-12 view-value">
+                {pricingRecord.Number_Of_Weekly_Payments__c}
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Payment Amount
+            </div>
+            <div if:true={isDailyFrequency} class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Daily_Payment_Amount__c} format-style="currency" currency-code="USD"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+            <div if:false={isDailyFrequency} class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Weekly_Payment_Amount__c} format-style="decimal"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+            <div class="slds-col slds-size_8-of-12 view-label">
+                Total Repayment Amount
+            </div>
+            <div class="slds-col slds-size_4-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Repayment_Amount__c} format-style="currency" currency-code="USD"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+        </div>
+    </div>
+    <div class="slds-p-top_medium">
+        <div class="slds-grid slds-wrap detail slds-var-p-around_x-small">
+            <div class="slds-col slds-size_12-of-12 header">
+                Commission $
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-label">
+                Commission Amount
+            </div>
+            <div class="slds-col slds-size_6-of-12 view-value">
+                <lightning-formatted-number value={pricingRecord.Commission_Amount__c} format-style="currency" currency-code="USD"
+                    maximum-fraction-digits="2"></lightning-formatted-number>
+            </div>
+        </div>
+    </div>
+</template>

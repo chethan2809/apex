@@ -1,0 +1,31 @@
+.view-label{
+    color: #767676;
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 8px
+}
+
+.view-value{
+    font-size: 12px;
+    text-align: right;
+    font-weight: 600;
+    padding-top: 8px
+}
+
+.header{
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.detail{
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+}

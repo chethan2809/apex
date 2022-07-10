@@ -1,0 +1,972 @@
+div[data-style-id="app"] .selectbuttons .MuiFormControl-root {
+  width: 100% !important;
+}
+
+div[data-style-id="app"]
+  .selectbuttons
+  .MuiFormControl-root
+  .MuiFormLabel-root {
+  display: none;
+}
+
+div[data-style-id="app"]
+  .selectbuttons
+  .MuiFormControl-root
+  .MuiListItem-button {
+  display: inline-block;
+  border: 1px solid #ebeef0;
+}
+
+div[data-style-id="app"]
+  .selectbuttons
+  .MuiFormControl-root
+  .MuiListItem-button.Mui-selected
+  .MuiListItemText-root {
+  width: calc(100% - 60px);
+  display: inline-block;
+}
+
+div[data-style-id="app"]
+  .selectbuttons
+  .MuiFormControl-root
+  .MuiListItem-button.Mui-selected
+  .MuiListItemIcon-root.suffixStyle {
+  width: 60px;
+  height: 32px;
+  margin: 0;
+}
+
+div[data-style-id="app"]
+  .selectbuttons
+  .MuiFormControl-root
+  .MuiListItem-button.Mui-selected
+  .MuiListItemIcon-root.suffixStyle
+  .material-icons {
+  line-height: 32px;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="ApplicationFlow"]
+  [data-style-id="steps"]
+  [data-style-id="steps"]
+  .MuiStepper-alternativeLabel {
+  display: none !important;
+}
+
+div[data-style-id="app"] [data-style-actor-name="ClsAppLayoutOneHeader"] {
+  margin: 0 !important;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="ClsAppLayoutOneHeader"]
+  [data-style-actor-name="CCMPSSPHeaderContainer"][data-style-id="static-content"] {
+  margin: 0 20% !important;
+}
+
+div[data-style-id="app"] [data-style-actor-name="footer"].static-content,
+div[data-style-id="app"] [data-style-actor-name="lc_footer"].static-content {
+  color: #fff !important;
+  padding: 4rem 2rem 2rem !important;
+  background-color: #2c3131 !important;
+  font-family: Lato;
+}
+
+div[data-style-id="app"] [data-style-actor-name="footer"].static-content a,
+div[data-style-id="app"] [data-style-actor-name="lc_footer"].static-content a {
+  font-family: Lato;
+  color: #fff !important;
+}
+
+div[data-style-id="app"] [data-style-actor-name="footer"].static-content span,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  span {
+  padding: 0 1rem 0 0;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div:last-child,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div:last-child {
+  margin-bottom: 0 !important;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div {
+  margin-bottom: 2rem;
+  height: 44px;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .text1,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .text1 {
+  width: 45%;
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 1.4rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .text1
+  > div,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .text1
+  > div {
+  padding-bottom: 0.5rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right {
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  .email,
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  .icon,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  .email,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  .icon {
+  font-size: 1.4rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  .email
+  a,
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  .icon
+  a,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  .email
+  a,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  .icon
+  a {
+  font-family: Lato !important;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  span,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  span {
+  padding: 0 0 0 2rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  span
+  i,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  span
+  i {
+  font-size: 2rem !important;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  > div,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  > div {
+  width: 20rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  > div:first-child,
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right
+  > span,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  > div:first-child,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right
+  > span {
+  color: #a1a1a1;
+  padding-bottom: 0.5rem;
+}
+
+div[data-style-id="app"]
+  [data-style-actor-name="footer"].static-content
+  > div
+  > div
+  .right.text3,
+div[data-style-id="app"]
+  [data-style-actor-name="lc_footer"].static-content
+  > div
+  > div
+  .right.text3 {
+  font-size: 1.4rem;
+}
+div[data-style-actor-name="ClsAppLayoutOneHeader"].appFlexVertical {
+  width: auto !important;
+  height: auto !important;
+}
+div[data-style-actor-name="clx_consumer_guest_HeaderContent"].actor-wrapper.contains-content,
+div[data-style-actor-name="clx_consumer_HeaderContentLoggedIn"].actor-wrapper.contains-content{
+  margin: 0 20% !important;
+}
+div[data-style-actor-name="clx_consumer_purposeDetails"]
+  .MuiFormHelperText-root.Mui-error {
+  padding: 0px 12px;
+}
+.MuiButton-containedPrimary,.MuiButton-containedSecondary {
+  background-color: #5b0e6c !important;
+  color: #fff !important;
+  border: 2px solid  #5b0e6c !important;
+  box-shadow: none !important;
+  padding: 6px 16px !important;
+}
+.MuiButton-containedPrimary:hover,.MuiButton-containedSecondary:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #000 !important;
+  box-shadow: none !important;
+}
+[pageid="clx_consumer_mobile_first_apply"] [data-style-actor-name="clx_consumer_guest_HeaderContent"] button{
+  color: rgba(0, 0, 0, 0.87) !important;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12) !important;
+  background-color: #e0e0e0 !important;
+  border: none !important;
+}
+[pageid="clx_consumer_mobile_first_apply"] [data-style-actor-name="clx_consumer_guest_HeaderContent"] button:hover{
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12) !important;
+  background-color: #d5d5d5 !important;
+}
+.MuiTableCell-head {
+  background-color: #5b0e6c !important;
+  color: white !important;
+ 
+  font-weight: 400 !important;
+  font-size: medium !important;
+  padding: 12px !important;
+}
+.toolbar-at-bottom:empty{
+  display:none;
+}
+[data-style-actor-name="clx_consumer_co_personalInformation"][data-style-id="tab-step-container"]{
+  margin: 0;
+  padding: 10px 0;
+}
+.MuiTableRow-root:hover {
+    background-color: #eaebec;
+    color: grey;
+}
+.MuiTableRow-root:nth-child(even) {
+    background-color: #f5f6f7;
+}
+div[data-style-actor-name="clx_consumer_co_PIIncomeDetail"] td[data-style-id="list-actions"] button,
+div[data-style-actor-name="clx_consumer_PIIncomeDetail"] td[data-style-id="list-actions"] button
+{
+	    margin-right: 5px;
+}
+div[data-style-actor-name="clx_consumer_PIIncomeDetail"] td[data-style-id="list-actions"],
+div[data-style-actor-name="clx_consumer_co_PIIncomeDetail"] td[data-style-id="list-actions"]
+{
+    justify-content: flex-end;
+}
+div[data-style-actor-name="clx_consumer_ListOfCollaterals"] .MuiGrid-spacing-xs-3 .MuiPaper-elevation1 {
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+div[data-style-actor-name="collateralTabs"] .MuiTab-textColorPrimary.Mui-selected{
+	    background-color: #337ab7 !important;
+    color: #fff !important;
+}
+[data-style-actor-name="infoTab"] {
+  margin: 0 !important;
+  padding: 5px !important;
+}
+[data-style-tag="mui"][data-style-id="app"] [data-style-actor-name="infoTab"] .text-after{
+  padding: 0;
+}
+div[data-style-overlay-name="clx_consumer_AddCollateralOverlay"] [data-style-id="modal-close-icon"]{
+	display:none;
+}
+[data-style-actor-name="CCMPSSPFeeDetails"] .MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+	display:none !important;
+}
+[data-style-actor-name="CCMPSSPGeneralSetting"] .MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+	display:none !important;
+}
+[data-style-actor-name="CCMPSSPApplicationDetails"] .MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+	display:none !important;
+}
+.MuiTypography-h1{
+	    font-size: 25px !important;
+}
+div[data-style-actor-name="ApplicationDeniel"] [aria-label="ApplicationDeniel"],
+div[data-style-actor-name="DecisionPending"] [aria-label="DecisionPending"]
+{
+	padding:0px 24px;
+}
+div[data-style-actor-name="clx_consumer_ApplicationSuccess"] .MuiTypography-h1{
+	padding-top:15px;
+}
+div[data-style-actor-name="LoginHeaderContent"] img {
+  width: auto !important;
+  max-height: 61px !important;
+  position: static !important;
+}
+[data-style-actor-name="clx_consumer_guest_HeaderContent"] [aria-label="LoginHeaderContent"]{
+    position: absolute !important;
+    top: 15px;
+}
+div[data-style-actor-name="clx_consumer_guest_HeaderContent"] .toolbar-at-top button:first-child,
+div[data-style-actor-name="clx_consumer_HeaderContentLoggedIn"] .toolbar-at-top button:first-child
+{
+	 background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+[data-style-actor-name="clx_consumer_HeaderContentLoggedIn"] .menu-action {
+
+}
+[data-style-actor-name="clx_consumer_HeaderContentLoggedIn"] .menu-action button{
+  color: white !important;
+}
+button[aria-label="AddApplication"]{
+  
+    color: rgba(0, 0, 0, 0.87) !important;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12) !important;
+    background-color: #e0e0e0 !important;
+    border: none !important;
+}
+button[aria-label="AddApplication"]:hover{
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12) !important;
+  background-color: #d5d5d5 !important;
+}
+button.Mui-disabled{
+	opacity:0.4;
+	cursor:not-allowed;
+}
+ div[data-style-actor-name="submitDocs"],
+ div[data-style-actor-name="DocumentUpload"]
+ {
+	 box-shadow:none !important;
+ }
+ div[data-style-actor-name="documentTitle"][data-style-id="static-content"]{
+	 padding:0px !important;
+ }
+div[data-style-actor-name="DocumentUpload"] li button,
+div[data-style-actor-name="DocumentUpload"] li button:hover,
+div[data-style-actor-name="DocumentUpload"] .upload-action label span {
+    border: 0px !important;
+    font-size: 22px;
+    padding-left: 0 !important;
+}
+div[data-style-actor-name="DocumentUpload"].actor-wrapper{
+	padding:0px 10px !important;
+}
+ [data-style-actor-name="header"].actor-wrapper{
+  margin:0px 15% !important;
+}
+[data-style-actor-name="header"] .MuiButtonBase-root{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+[data-style-actor-name="DocuSignIframe"]{
+    height:100vh;
+}
+.MuiTab-textColorPrimary.Mui-disabled {
+  color: #515151;
+  background: #d6d6d6;
+}
+[data-style-tag="mui"][data-style-id="modal-dialog"][data-client="desktop"] .dialog-header{
+	display:none;
+}
+
+[data-style-actor-name="CCMPGettingConsentData"] .contains-component{
+	display: none !important;
+}
+.MuiDialog-container.MuiDialog-scrollPaper .MuiPaper-root div.actor-wrapper.contains-component,
+[data-style-tag="mui"][data-style-id="modal-dialog"] [data-style-actor-name="clx_consumer_AddCollateralOverlay"]{
+  background-color: white;
+}
+[data-style-actor-name="clx_consumer_co_Information"] [data-style-actor-name="clx_consumer_co_personalInformation"]{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+[data-style-tag="mui"][data-style-id="modal-dialog"][data-client="desktop"] .dialog-header+.actor-wrapper{
+  top: 15px !important;
+}
+.actor-wrapper .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+[data-style-actor-name="collateralTabs"] .tab-bar{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+[data-style-tag="mui"] [data-style-id="queue-view"][data-style-actor-name="DocumentUpload"] [data-style-id="queue-actions"]{
+  left: 0;
+}
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-entry"]{
+  padding-left: 50px;
+}
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] button[aria-label="Checked"],
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] button[aria-label="Unchecked"]{
+  position: absolute;
+    left: 0px;
+    padding: 0 !important;
+    min-width: 40px;
+}
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] button[aria-label="Checked"]:hover,
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] button[aria-label="Unchecked"]:hover{
+  background-color: transparent;
+}
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] button[aria-label="View Document"]{
+  position: absolute;
+    right: 60px;
+}
+[data-style-actor-name="DocumentUpload"] li [data-style-id="queue-actions"] .upload-action.position-default{
+  position: absolute;
+  right: 0;
+}
+
+[data-style-actor-name="clx_consumer_DocumentUploadAPIPanel"] th.MuiTableCell-root.MuiTableCell-body{
+  max-width:400px;
+  word-wrap:break-word;
+}
+
+[data-style-actor-name="CLXDashboardOverview"] .MuiPaper-elevation0 {
+  background-color: #fff !important;
+  border-color: transparent;
+  padding: 2rem;
+  border-radius: 4px !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+[data-style-actor-name="CCSSPDashboardOverview"] .amounts {
+  width: 100%;
+  text-align: center;
+  display: block !important;
+}
+[data-style-actor-name="CCSSPDashboardOverview"] .amounts .values {
+  display: inline-block !important;
+  width: 30rem !important;
+  padding-right: 4rem;
+}
+[data-style-actor-name="CCSSPDashboardOverview"] .amounts .values .labelval {
+  font-size: 2rem !important;
+}
+[data-style-actor-name="CCSSPDashboardOverview"] .amounts .values .amt {
+  font-size: 3rem !important;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CCMPSSPHeaderContainer"] .menu-action,
+[data-style-actor-name="CCMPSSPHeaderContainer"] .menu-action,
+[data-style-actor-name="HeaderContentMobile"] .menu-action {
+  position: absolute;
+  right: 0 !important;
+}
+[data-style-actor-name="CCMPSSPHeaderContainer"] .menu-action button,
+[data-style-actor-name="CCMPSSPHeaderContainer"] .menu-action button,
+[data-style-actor-name="HeaderContentMobile"] .menu-action button {
+  box-shadow: none;
+  font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+  [data-style-actor-name="CCMPSSPHeaderContainer"] {
+    display: none !important;
+  }
+  [data-style-actor-name="CCMPSSPHeaderContainer"],
+  [data-style-actor-name="HeaderContentMobile"] {
+    display: block !important;
+  }
+  [data-style-actor-name="CCMPSSPHeaderContainer"] button span,
+  [data-style-actor-name="HeaderContentMobile"] button span {
+    color: #fff;
+  }
+}
+[data-style-actor-name="CCMPSSPHeaderContainer"] img,
+[data-style-actor-name="CCMPSSPHeaderContainer"] img,
+[data-style-actor-name="HeaderContentMobile"] img {
+}
+@media (max-width: 600px) {
+  [data-style-actor-name="CCMPSSPHeaderContainer"] img,
+  [data-style-actor-name="CCMPSSPHeaderContainer"] img,
+  [data-style-actor-name="HeaderContentMobile"] img {
+    top: calc(44px - 5rem) !important;
+  }
+}
+[data-style-actor-name="CCMPSSPHeaderContainer"] button,
+[data-style-actor-name="CCMPSSPHeaderContainer"] button,
+[data-style-actor-name="HeaderContentMobile"] button {
+  box-shadow: none;
+  padding: 0 !important;
+  background-color: #5b0e6c !important;
+  padding-top: 22px !important;
+  padding-left: 21px !important;
+}
+[data-style-actor-name="CCMPSSPSummaryDetails"] .MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded {
+  box-shadow: none !important;
+}
+[data-style-actor-name="CCMPSSPSummaryDetails"] .MuiCardContent-root {
+	padding-left: 19px !important;
+    padding-bottom: 14px !important;
+	padding-right: 16px !important;
+	padding-top: 0px !important;
+}
+[data-style-actor-name="CCMPSSPHeaderContainer"] .MuiToolbar-root {
+  height: 100% !important;
+  min-height: 48px;
+}
+[data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 771px) {
+  [data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper
+    [data-style-id="base-panel"]
+    > div {
+    display: inline !important;
+  }
+}
+[data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div
+  [data-style-id="text-before"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+[data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div
+  [data-style-id="text-before"]
+  span.fa {
+  display: block;
+  text-align: center;
+  font-size: 8rem;
+}
+[data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  .MuiToolbar-regular {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+div[data-style-actor-name="CCMPSSPCLXChangePasswordPanel"].actor-wrapper.contains-component {
+  margin-top: 6px !important;
+}
+[data-style-actor-name="CCMPSSPUserInformation"] .MuiTabs-scroller button {
+  width: 50% !important;
+  max-width: none;
+  border: 0px !important;
+}
+div[data-style-actor-name="CCMPSSPUserInformation"] div.MuiTabs-root.tab-bar {
+  margin: 0px calc(6px);
+}
+div[data-style-actor-name="CCMPSSPUserInformation"] .MuiTabScrollButton-root {
+  display: none !important;
+}
+.MuiTab-root {
+  background-color: #f1f1f1 !important;
+  /*
+  border-left: 1px solid #e1e1e1 !important;
+  border-right: 1px solid #e1e1e1 !important;
+  */
+}
+.MuiTab-root.Mui-selected {
+  background-color: #5b0e6c !important;
+  color: #fff !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPUserEmail"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPUserFirstName"].MuiPaper-root,
+div[data-style-actor-name="CCMPSSPUserLastName"].MuiPaper-root {
+  box-shadow: none !important;
+  margin: 0px !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPUserAddress"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPUserPhone"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPUserEmail"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPUserLastName"] .MuiPaper-elevation1,
+div[data-style-actor-name="CCMPSSPUserFirstName"] .MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPUserAddress"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPUserPhone"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPUserEmail"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPUserLastName"] .MuiCardContent-root,
+div[data-style-actor-name="CCMPSSPUserFirstName"] .MuiCardContent-root {
+  padding: 0px 10px 0px 10px !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPUserFirstName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPUserEmail"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CCMPSSPUserLastName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded
+ {
+  display: flex;
+  align-items: center;
+}
+
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPUserFirstName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPUserEmail"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CCMPSSPUserLastName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child
+{
+  flex-basis: calc(100% - 64px);
+}
+
+div[data-style-field-name="LastName"],
+div[data-style-field-name="Email"],
+div[data-style-field-name="MobilePhone"]
+{
+  padding: 0px !important;
+}
+
+div[data-style-field-name="LastName"] .MuiFormControl-root,
+div[data-style-field-name="Email"] .MuiFormControl-root,
+div[data-style-field-name="MobilePhone"] .MuiFormControl-root
+{
+  margin: 5px 0px 0px 0px;
+}
+
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPUserAddress"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPUserPhone"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPUserEmail"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPUserLastName"] .toolbar-at-bottom button,
+div[data-style-actor-name="CCMPSSPUserFirstName"] .toolbar-at-bottom button {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPUserAddress"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPUserPhone"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPUserEmail"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPUserLastName"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CCMPSSPUserFirstName"] .toolbar-at-bottom button i {
+  font-size: 22px !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPUserAddress"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPUserPhone"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPUserEmail"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPUserLastName"] .toolbar-at-bottom,
+div[data-style-actor-name="CCMPSSPUserFirstName"] .toolbar-at-bottom {
+  padding: 0px !important;
+}
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+
+div[data-style-actor-name="CCMPSSPUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CCMPSSPBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CCMPSSPUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+
+div[data-style-actor-name="Address"].appFlexVertical{
+  margin: 0px !important;
+  width:100% !important;
+  height:100% !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessAddress"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CCMPSSPBusinessPhone"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CCMPSSPUserPhone"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+[data-style-actor-name="CCMPSSPLoanList"] .MuiGrid-spacing-xs-3 {
+  padding: 12px;
+}
+[data-style-actor-name="CCMPSSPLoanList"] .MuiGrid-grid-md-5 {
+	max-width: none !important;
+	flex-basis: 50% !important;
+}
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"] {
+  min-height: 380px;
+  position:relative;
+}
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-content"] {
+  padding-top: 0 !important;
+}
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value-entry"]:first-child {
+  border-bottom: 1px solid #5b0e6c;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value-entry"]:first-child
+  [data-style-id="card-view-value"] {
+  text-align: center !important;
+  font-size: 2.6rem;
+  width: 100%;
+}
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value"],
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="field-label"] {
+  
+}
+/* [data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root {
+
+      padding: 2rem 1rem;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+} */
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root
+  button {
+    width: calc(100% - 30px);
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    height: 4.6rem;
+    background: #5b0e6c;
+    color: #fff !important;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"],
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"]:hover{
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    bottom: unset;
+    left: unset;
+}
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"] i{
+  color: #5b0e6c;
+}
+[data-style-actor-name="CCMPSSPLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root
+  button:hover {
+  background: #014280;
+}
+@media (max-width: 959px)
+{
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"]{
+	    min-height: unset;
+}
+[data-style-actor-name="CCMPSSPLoanList"] [data-style-id="card-entry"] .MuiCardActions-root{
+	position:static;
+}
+[data-style-actor-name="CCMPSSPLoanList"] .MuiGrid-grid-md-5 {
+	max-width: none !important;
+	flex-basis: 50% !important;
+}
+}
+[data-style-actor-name="CCMPSSPFilters"] .MuiToolbar-root:last-child {
+  min-height: 0 !important;
+  top: -2rem;
+}
+[data-style-actor-name="CCMPSSPFilters"] [data-style-section-name="DateRange"] {
+  margin-bottom: 2rem !important;
+}
+[data-style-actor-name="CCMPSSPBillsDetails"][data-style-id="list-view"],
+[data-style-actor-name="CCMPSSPDocumentDetails"][data-style-id="list-view"],
+[data-style-actor-name="CCMPSSPPaymentScheduleDetails"][data-style-id="list-view"],
+[data-style-actor-name="CCMPSSPTransactionDetails"][data-style-id="list-view"] {
+  padding: 2rem;
+}
+div[data-style-overlay-name="CCMPSSPContractMoreInfo"] .MuiPaper-elevation1{
+  box-shadow: none !important;
+}
+[data-style-overlay-name="CCMPSSPInterestStatementOverlay"] .MuiDialog-paperFullWidth {
+    width: 40% !important;
+    height: 80%;
+    max-width: 1280px;
+}
+[data-style-actor-name="CCMPGettingConsentData"] {
+  display: none !important;
+}
+[data-style-actor-name="CCMPSSPBusinessAddressCaseData"] {
+  display: none !important;
+}
+[data-style-actor-name="CCSSPBankAccountCaseData"] {
+  display: none !important;
+}

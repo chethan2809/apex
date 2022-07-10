@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <div class="slds-modal__header">
+            <h2 class="slds-modal__title slds-hyphenate slds-text-heading--medium">
+                Wavier
+            </h2>
+        </div>
+        <div>
+            <lightning-combobox
+            name="progress"
+            label="Waiver Type"
+            value={value}
+            placeholder="Select Type"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+        </div>
+</lightning-card>
+</template>

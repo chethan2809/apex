@@ -1,0 +1,24 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId" controller="UCCFilingManager">
+
+    <aura:attribute name="showConfirmDialog" type="boolean" default="true"/>
+
+        <aura:if isTrue="{!v.showConfirmDialog}">
+            <!--Modal Box Start-->
+
+                    <!--Modal Box Header Start-->
+                    <header class="slds-modal__header">
+                        <h1 class="slds-text-heading--medium">Confirmation</h1>
+                    </header>
+                    <!--Modal Box Header End-->
+
+                    <!--Modal Box Content Start-->
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <center><b>Are you sure you want to create a new filing?</b></center>
+                    </div>
+
+                    <footer class="slds-modal__footer">
+                        <lightning:button name='No' label='No' onclick='{!c.handleConfirmDialogNo}'/>
+                        <lightning:button variant="brand" name='Yes' label='Yes' onclick='{!c.handleConfirmDialogYes}'/>
+                    </footer>
+        </aura:if>
+</aura:component>

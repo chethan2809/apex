@@ -1,0 +1,95 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" controller="clcommon.PortalActions">
+    <apex:include pageName="clcommon__ResolveNamespace"/>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <apex:stylesheet value="{!URLFOR($Resource.CLXServicingPortal)}" />
+            <title>CLX Servicing portal</title>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXB8MS1fMMXwu99qZAmuB5MU0_mTtfpWI&libraries=places"></script>
+
+             <style>
+                [data-style-field-name="clxIcons__c"]:after {
+                    content: "\f071";
+                    font: normal normal normal 14px/1 FontAwesome;
+                    color: #f2c51c;
+                    font-size: 23px;
+                }
+                [data-style-field-name="clxIcons__c"] {
+                    margin-top: -41px;
+                    margin-left: -35px;
+                }
+                [data-style-actor-name="CLXContractMoreInfo"] .text-after {
+                    text-align: center;
+                }
+                .notesA {
+                    color: #f2c51c;
+                    font-weight: 500;
+                }
+                .MuiPopover-root#hamburger .MuiMenu-paper{
+                    top: 0px !important;
+                }
+                .MuiPopover-root#hamburger ul li:nth-child(2) {
+                    position: absolute !important;
+                }
+                .MuiPopover-root#hamburger .fa.fa-times-circle-o {
+                    position: fixed;
+                    right: 20px;
+                    top: 75px;
+                    font-size: 20px;
+                    z-index: 9999 !important;
+                }
+                .MuiPopover-root#hamburger ul li:nth-child(1) {
+                    background-color: rgb(51, 122, 183);
+                    margin: 0 !important;
+                }
+              
+                .MuiPopover-root#hamburger ul {
+                    padding-top: 0 !important;
+                }
+                @media print {
+                  body * {
+                    visibility: hidden;
+                  }
+                  [data-style-id="tab-step-body"]{
+                      height:80vh;
+                  }
+                  [data-style-id="tab-step-body"], [data-style-id="tab-step-body"] * {
+                    visibility: visible;
+                  }
+                  .MuiTableRow-head th {
+                    font-size: 1.6rem !important;
+                    padding: 10px 0 !important;
+                  }
+                  [data-style-tag="mui"] [data-style-id="list-view"] tbody td, [data-style-tag="mui"] [data-style-id="list-view"] tbody th{
+                      padding: 15px 0;
+                  }
+                  [data-style-id="tab-step-body"] [data-style-actor-name="CLXBillsDetails"]{
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                  }
+                }
+                [data-style-actor-name="EditLoanNameOverlay"].actor-wrapper.contains-division {
+                    position: relative !important;
+                    top: 0px !important;
+                    padding: 20px;
+                        min-width: 520px;
+                }
+                .MuiDialog-paperFullWidth{
+                    width:auto !important;
+                    min-width: 520px;
+                }
+             </style>
+        </head>
+        <body>
+            <clcommon:IncludePortal2 navName="CLXServicingPortal" theme="mui" showDefaultLoadingPage="false">
+            </clcommon:IncludePortal2>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6npp4m0Xoa5na1QSAr4X2Y5fGlzxirI&libraries=places"></script>-->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXB8MS1fMMXwu99qZAmuB5MU0_mTtfpWI&libraries=places"></script>
+            <apex:stylesheet value="{!URLFOR($Resource.tableToCSV)}" />
+            <apex:include pageName="portalCustomJS"/>
+        </body>      
+      </html>
+</apex:page>

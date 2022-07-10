@@ -1,0 +1,15 @@
+.slds-card__header{
+    padding-top: 0px!important;
+}
+
+.text-preview{
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.auto-scroll{
+    height: 250px;
+    overflow-y: auto;
+}

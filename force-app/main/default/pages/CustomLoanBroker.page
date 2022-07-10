@@ -1,0 +1,131 @@
+<apex:page lightningStylesheets="true" standardController="loan__Broker__c"  sidebar="{!IF($CurrentPage.Parameters.modal == 'true', false, true)}">
+<apex:include pageName="clcommon__mintTheme"/>
+
+    <apex:stylesheet value="{!IF($CurrentPage.Parameters.modal == 'true', $Resource.loan__modalheaderStyle,'')}" />
+    <apex:stylesheet value="{!$Resource.loan__MFIStyles}" />
+    <script
+        src="{!URLFOR($Resource.loan__jQueryFiles, 'js/jquery-3.5.1.min.js')}" />
+    <script src="{!URLFOR($Resource.loan__helperclose)}" />
+    <script>
+        j$ = jQuery.noConflict();
+    </script>
+    <script>
+        function confirmCancel() {
+            var isConfirm = confirm("Are you sure you want to cancel?");
+            if(isConfirm){
+                return this.parent.parent.window.close();
+            }
+        }
+
+
+    </script>
+    <script type="text/javascript"
+        src="{!URLFOR($Resource.loan__jQueryFiles, 'js/jquery-3.5.1.min.js')}" />
+
+    <script>
+        function testify(){
+            alert(j$('').length);
+        };
+      function scrolify(tblAsJQueryObject, height){
+        var oTbl = tblAsJQueryObject;
+
+        // for very large tables you can remove the four lines below
+        // and wrap the table with <div> in the mark-up and assign
+        // height and overflow property
+        var oTblDiv = $("<div/>");
+        oTblDiv.css('height', height);
+        oTblDiv.css('overflow-y','scroll');
+        oTbl.wrap(oTblDiv);
+
+        // save original width
+        oTbl.attr("data-item-original-width", oTbl.width());
+        oTbl.find('thead tr td').each(function(){
+            $(this).attr("data-item-original-width",$(this).width());
+        });
+        oTbl.find('tbody tr:eq(0) td').each(function(){
+            $(this).attr("data-item-original-width",$(this).width());
+        });
+
+
+        // clone the original table
+        var newTbl = oTbl.clone();
+
+        // remove table header from original table
+        oTbl.find('thead tr').remove();
+        // remove table body from new table
+        newTbl.find('tbody tr').remove();
+
+        oTbl.parent().parent().prepend(newTbl);
+        newTbl.wrap("<div/>");
+
+        // replace ORIGINAL COLUMN width
+        newTbl.width(newTbl.attr('data-item-original-width'));
+        newTbl.find('thead tr td').each(function(){
+            $(this).width($(this).attr("data-item-original-width"));
+        });
+        oTbl.width(oTbl.attr('data-item-original-width'));
+        oTbl.find('tbody tr:eq(0) td').each(function(){
+            $(this).width($(this).attr("data-item-original-width"));
+        });
+    }
+
+    function callScroll() {
+        scrolify($('.scrollableFixedHeader'), 300); // 160 is height
+    }
+    </script>
+
+    <apex:sectionHeader title="Broker" id="loanBrokerSection" />
+    <apex:form >
+        <apex:pageBlock mode="edit" id="createBroker">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="both">
+                <!-- apex:commandButton value="Calculate Commission 1" action="{!calculateCommission}" reRender="createBroker"/ -->
+                <apex:commandButton value="Save" action="{!save}" reRender="createBroker"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}" />
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="2" id="BrokerHeaderPageBlock" title="Header">
+                 <apex:inputField value="{!loan__Broker__c.loan__Lending_Account__c}" />
+                 <apex:inputField value="{!loan__Broker__c.loan__Enabled__c}" />
+                 <apex:inputField value="{!loan__Broker__c.loan__Account__c}"/>
+                 <apex:inputField value="{!loan__Broker__c.loan__Commission_Plan__c}" required="true">
+                    <!-- apex:actionSupport action="{!commissionPlanChange}" rerender="BrokerPlanPageBlock" event="onchange"/ -->
+                 </apex:inputField>
+                <apex:inputField value="{!loan__Broker__c.loan__Contact__c}"/>
+                <apex:outputField value="{!loan__Broker__c.Disbursal_Transaction__c}"/>
+                 <apex:inputField value="{!loan__Broker__c.Is_Bonus_Payment__c}"/>
+                 <!-- apex:inputField value="{!loan__Broker__c.loan__Reverse_Broker__c}"/ -->
+                <apex:inputField value="{!loan__Broker__c.Bonus_Amount__c}"/>
+                <apex:inputField value="{!loan__Broker__c.Is_Clawback__c}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="2" id="BrokerPlanPageBlock" title="Plan Details">
+                <apex:inputField value="{!loan__Broker__c.Commission_Point__c}" />
+                <apex:inputField value="{!loan__Broker__c.loan__Buy_Rate__c}" />
+                <apex:inputField value="{!loan__Broker__c.Flat_Referral_Fee__c}" />
+                <apex:inputField value="{!loan__Broker__c.loan__Amortization_Term__c}" rendered="{!loan__Broker__c.loan__Commission_Disbursement_Method__c == 'Equal Installments'}"/>
+                <!-- apex:outputField value="{!loan__Broker__c.loan__Calculation_Method__c}"/ -->
+                <apex:outputField value="{!loan__Broker__c.loan__Custom_Commission_Calculation_Class__c}" rendered="{!loan__Broker__c.loan__Calculation_Method__c == 'Custom'}"/>
+                <apex:outputField value="{!loan__Broker__c.loan__Plan_Description__c}" />
+                <!-- apex:outputField value="{!loan__Broker__c.loan__Flat_Amount__c}"  / -->
+                <!-- apex:outputField value="{!loan__Broker__c.loan__Maximum_Commission_Percentage__c}" / -->
+                <apex:outputField value="{!loan__Broker__c.loan__Upfront_Percentage__c}" />
+                <!--apex:outputField value="{!loan__Broker__c.loan__Factor__c}" / -->
+                <apex:outputField value="{!loan__Broker__c.loan__Commission_Disbursement_Method__c}" />
+                <apex:outputField value="{!loan__Broker__c.loan__Full_Payment_on_Early_Closure__c}"  rendered="{!loan__Broker__c.loan__Commission_Disbursement_Method__c == 'Equal Installments'}"/>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="2" id="BrokerCommissionPageBlock" title="Commission Amount">
+                <apex:inputField value="{!loan__Broker__c.loan__Commission_Amount__c}" />
+                <apex:outputField value="{!loan__Broker__c.loan__Remaining_Commission_Amount_Funding__c}"/>
+                <apex:outputField value="{!loan__Broker__c.loan__Upfront_Commission_Amount__c}" />
+                <apex:outputField value="{!loan__Broker__c.loan__Total_Commission_Paid_Amount__c}"  />
+                <apex:outputField value="{!loan__Broker__c.loan__Last_Payment_Date__c}" />
+                <apex:outputField value="{!loan__Broker__c.loan__Next_Payment_Date__c}" />
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

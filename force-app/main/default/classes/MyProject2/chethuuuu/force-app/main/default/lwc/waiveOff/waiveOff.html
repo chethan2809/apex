@@ -1,0 +1,114 @@
+<template>
+    <div class="slds-p-around_medium lgc-bg">
+    <div class="slds-box slds-box_xx-large">
+      <lightning-card  variant="Narrow"  title="Waiver" >
+      </lightning-card>
+      <div class="slds-align_absolute-center" >
+        <lightning-button  label="Save"  onclick={handleClick} ></lightning-button>
+          <lightning-button  label="Cancel"  onclick={handleCancel} ></lightning-button>
+          </div>
+     <!--- <div class="card"></div>-->
+       <template if:true={options}>
+        <div class="slds-box slds-box_xx-large">
+      <lightning-combobox
+              name="Waive Type"
+              label="Waive Type"
+              placeholder="Interest Waiver"
+              value={selectValue}
+              options={options}
+              onchange={handleChange}
+      >
+    </lightning-combobox>
+        </div>
+        <lightning-record-edit-form object-api-name="loan__Loan_Account__c"  record-id={recordid}>
+        <template if:true={displaysc1}>
+            <lightning-card  variant="Narrow"  title="Interest Waiver" >
+              <div class="slds-grid slds-wrap slds-p-around_medium">
+              <div class="clsPrefix slds-col slds-size_1-of-2">
+              <lightning-output-field field-name="Name" onmouseout={handleMouseout} onmouseover={handleMouseover}> 
+              </lightning-output-field>
+              
+            
+              </div>
+
+              <div class="clsPrefix slds-col slds-size_1-of-2">
+              <lightning-input label="Total Intrest On Till Today"  value={totalval}></lightning-input>
+              </div>
+              <div class="clsPrefix slds-col slds-size_1-of-2">
+              <lightning-input label="WaivePercentage(%)" value="100.00"></lightning-input>
+              </div>
+              <div class="clsPrefix slds-col slds-size_1-of-2">
+              <lightning-input  label="Waive Amount" value={totalval}></lightning-input>
+              </div>
+              <div class="clsPrefix slds-col slds-size_1-of-2">
+              <p>Transaction Date: <lightning-formatted-date-time  value={Sysdate} year="numeric" month="numeric" day="numeric"></lightning-formatted-date-time></p>
+              </div>
+            </div>
+        </lightning-card>   
+ 
+        </template>
+  <template if:true={displaysc2}>
+    <lightning-card  variant="Narrow"  title="Charge waiver" >
+      <div class="slds-grid slds-wrap slds-p-around_medium">
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+          <lightning-combobox
+              name="Fee Type"
+              label="Fee Type"
+              options={Feeoptions}
+              onchange={handleChangefees}
+      >
+    </lightning-combobox>
+          </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input label="Total Charge Amount Till Today" value={totalval}></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input label="WaivePercentage(%)" value="100.00"></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input  label="Waive Amount" value={totalval}></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <p>Transaction Date: <lightning-formatted-date-time  value={Sysdate} year="numeric" month="numeric" day="numeric"></lightning-formatted-date-time></p>
+        </div>
+
+      </div>
+      </lightning-card> 
+
+</template>
+<template if:true={displaysc3}>
+    <lightning-card  variant="Narrow"  title="Interest On Arrears Waiver" >
+      <div class="slds-grid slds-wrap slds-p-around_medium">
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input label="Total Intrest On Arrears Till Today" value="0"></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input label="WaivePercentage(%)" value="100.00"></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <lightning-input  label="Waive Amount" value="0"></lightning-input>
+        </div>
+        <div class="clsPrefix slds-col slds-size_1-of-2">
+        <p>Transaction Date: <lightning-formatted-date-time  value={Sysdate} year="numeric" month="numeric" day="numeric"></lightning-formatted-date-time></p>
+        </div>
+      </div>
+         
+        </lightning-card>
+  </template>
+  <div class="slds-align_absolute-center" style="height:5rem">
+  <lightning-button  label="Save"  onclick={handleClick}></lightning-button>
+    <lightning-button  label="Cancel"  onclick={handleCancel} ></lightning-button>
+    </div>
+    </lightning-record-edit-form>
+  </template>
+    </div>
+  </div>
+   
+  
+  </template>

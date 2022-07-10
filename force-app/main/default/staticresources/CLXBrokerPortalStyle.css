@@ -1,0 +1,2471 @@
+:focus {
+    outline: none !important;
+}
+
+li.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+    padding: 6px !important;
+}
+
+[data-style-actor-name="CLXBrokerHomeContainer"].contains-division:first-child {
+    padding-top: 0.5em !important;
+}
+
+[data-style-actor-name="CCBPConcurrentContractDetails"].actor-wrapper.contains-component {
+    display:none;
+}
+
+[data-style-actor-name="CCBPGetNoficationData"].actor-wrapper.contains-component{
+    display:none;
+}
+
+.cCenterPanel.slds-m-top--x-large.slds-p-horizontal--medium {
+    min-width: 100vw !important;
+}
+
+.siteforceStarterBody .cCenterPanel {
+    width: 100% !important;
+    max-width: 100vw !important;
+    transition: 0.3s;
+}
+
+[data-style-actor-name="ClsAppLayoutOneHeader"].actor-wrapper.contains-division.layout {
+    box-shadow: 0px 3px 10px #1d1d1d80;
+    /* position: fixed !important; */
+    z-index: 10;
+}
+
+[data-style-actor-name="ClsAppLayoutOneHeader"] .MuiButton-containedPrimary {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+[data-style-id="division"][data-style-actor-name="ClsAppLayoutOneHeader"] {
+    box-shadow: none;
+    overflow: hidden !important;
+}
+
+[data-style-actor-name="CLXBrokerHeaderContent"] {
+    overflow: hidden !important;
+}
+
+[data-style-actor-name="CLXBrokerHeaderContent"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-top-left.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge,
+[data-style-actor-name="CLXBrokerHeader"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-top-left.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+    height: 5em;
+    width: 15em;
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerHeaderContent"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters,
+[data-style-actor-name="CLXBrokerHeader"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    width: 50%;
+    bottom: 5em;
+    left: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge,
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-bottom-right.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+    background-color: #fff;
+    color: #9817b5;
+    border: 2px solid #9817b5;
+    box-shadow: 0 3px 6px #1d1d1d50;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge:hover,
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-bottom-right.MuiButton-containedSizeLarge.MuiButton-sizeLarge:hover {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+    border: 2px solid #9817b5;
+    box-shadow: 0 3px 6px #1d1d1d50;
+}
+
+.MuiListItem-root.Mui-selected {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c) !important;
+    color: #fff;
+}
+
+.MuiListItem-root:hover {
+    background-image: transparent !important;
+    color: #fff;
+}
+
+.MuiButton-containedSizeLarge {
+    padding: 6px 16px !important;
+    font-size: 14px !important;
+}
+
+.MuiTabs-root.tab-bar.MuiTabs-vertical {
+    background-color: #f5f6f7 !important;
+    position: fixed;
+    display: block;
+    min-height: 100% !important;
+    z-index: 5;
+    box-shadow: 0px 0 8px 3px #1d1d1d80;
+}
+
+.MuiTab-textColorPrimary {
+    color: #000 !important;
+}
+
+.MuiTab-root {
+    font-size: 14px !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #fff !important;
+}
+
+.MuiTabs-flexContainerVertical img {
+    border-radius: 100%;
+    width: 50%;
+}
+
+.MuiTabs-indicator {
+    width: 100% !important;
+}
+
+[data-style-actor-name="CLXBrokerDealerProfilePic"] img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div [data-style-id="text-before"] .Pwd-Info span.fa {
+    display: block;
+    text-align: center;
+    font-size: 8rem;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiTypography-body1 {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 5em;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .record-content {
+    overflow: auto;
+	background-color: #DEE1E6;
+}
+
+[data-style-actor-name="CLXBrokerFooter"].contains-content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    padding-left: 12em !important;
+}
+
+[data-style-actor-name="CLXBrokerFooter"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    color: #fff !important;
+}
+
+/*profile tabs css*/
+[data-style-actor-name="CLXBrokerProfiled"] .MuiTabs-vertical .MuiTab-textColorPrimary.Mui-selected {
+    color: #fff !important;
+    background-image: linear-gradient(to left, #9817b5, #5b0e6c);
+}
+
+[data-style-actor-name="CLXBrokerProfiled"] .MuiTabs-vertical .MuiTab-textColorPrimary {
+    color: #514f4f !important;
+}
+
+[data-style-actor-name="CLXBrokerProfiled"] .MuiTypography-gutterBottom {
+    text-align: center;
+}
+
+[data-style-actor-name="CLXBrokerProfiled"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    min-height: 50px;
+}
+
+[data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerDealerProfilePic"] img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div [data-style-id="text-before"] .Pwd-Info span.fa {
+    display: block;
+    text-align: center;
+    font-size: 8rem;
+}
+
+[data-style-actor-name="TPTChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div [data-style-id="text-before"] {
+    align-items: center;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiTypography-body1 {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .values {
+    margin: 5px 15px;
+    text-align: center;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 5em;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .amounts {
+    text-align: center;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .MuiTypography-root.MuiTypography-body1>div:nth-child(2) {
+    border: 2px solid #9817b5;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 4px;
+    /* position: relative; */
+    left: 3px;
+    /* width: 98vw; */
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="Subject"] [data-style-id="card-view-value"] {
+    width: 65%;
+    text-align: left !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] [data-style-id="static-content"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*profile tabs css*/
+[data-style-actor-name="CLXBrokerProfiled"] .MuiTab-textColorPrimary.Mui-selected {
+    color: #595757 !important;
+}
+
+[data-style-actor-name="CLXBrokerProfiled"] .MuiTab-textColorPrimary {
+    color: #514f4f !important;
+}
+
+/*cigar bar css*/
+/* [data-style-actor-name="CLXBrokerAnalyticsProgressBars"]:first-child {
+    border: 2px solid #5b0e6c;
+    border-radius: 4px;
+    left: 1% !important;
+    width: 98% !important;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] .text {
+    padding: 1rem;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    display: none !important;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] .MuiTypography-body1 {
+    height: 5em !important;
+    width: 97% !important;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] span.color-blue {
+    background: #5bc0de;
+    height: 1rem;
+    display: inline-flex;
+    width: 2rem;
+    border-radius: 4px;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] span.color-yellow {
+    background: #f7a839;
+    height: 1rem;
+    display: inline-flex;
+    width: 2rem;
+    border-radius: 4px;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] span.color-green {
+    background: #14b469;
+    height: 1rem;
+    display: inline-flex;
+    width: 2rem;
+    border-radius: 4px;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBars"] span.color-red {
+    background: #de5637;
+    height: 1rem;
+    display: inline-flex;
+    width: 2rem;
+    border-radius: 4px;
+} */
+
+[data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerRecenAppCreated"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+    width: 99.7%;
+    position: relative;
+    left: -4px;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab.Mui-selected {
+    background-image: linear-gradient(to left, #9817b5, #5b0e6c) !important;
+    color: #fff !important;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab {
+    color: #514f4f !important;
+}
+
+.MuiTabs-root.tab-bar.MuiTabs-vertical .MuiTab-textColorPrimary {
+    /* color: #2c8fe6 !important; */
+    padding: 1.5em 0 !important;
+}
+
+.MuiTabs-root.tab-bar.MuiTabs-vertical .MuiTab-textColorPrimary.Mui-selected {
+    color: #fff !important;
+    background-color: #9817b5 !important;
+}
+
+button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab:hover,
+.MuiListItem-button:hover {
+    background-image: linear-gradient(to right, #2c8fe6, #5b0e6c) !important;
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+span.MuiTabs-indicator {
+    background-color: transparent !important;
+}
+
+[data-style-actor-name="ClsAppLayoutOneContent"] {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] [data-style-id="tabs"] {
+    height: 73vh !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab.Mui-disabled.Mui-disabled {
+    margin: 1em;
+    padding-top: 1.5em;
+}
+
+[data-style-actor-name="CLXBrokerHeaderContent"] {
+    margin: 0 !important;
+}
+
+/*
+[data-style-actor-name="CLXBrokerHeaderContent"] img {
+    width: 180px !important;
+    height: 50px !important;
+    top: 0.5em !important;
+    left: 1em !important;
+}
+*/
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBar"] div {
+    overflow: hidden !important;
+}
+
+[data-style-actor-name="CLXBrokerAnalyticsProgressBar"] .MuiTypography-root.MuiTypography-body1 {
+    height: 6em !important;
+}
+
+.MuiTable-root {
+    width: 99% !important;
+    margin: 0.4em !important;
+    border: 1px solid #5b0e6c;
+}
+
+.MuiTableCell-head {
+    background-color: #5b0e6c !important;
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: medium !important;
+    padding: 12px !important;
+}
+
+[data-style-stage-name="Home"] .MuiTableCell-body,
+[data-style-actor-name="CLXBrokerGuarantorsDisplay"] .MuiTableCell-body,
+[data-style-actor-name="CLXBrokerCollateralSecurity"] .MuiTableCell-body {
+    /* text-align: center !important; */
+    /* border: 1px solid #3379b75b; */
+    padding: 6px 12px !important;
+}
+
+[data-style-stage-name="MyStateCreateApplication"] button.MuiButtonBase-root.MuiIconButton-root.action.position-default {
+    padding: 6px !important;
+}
+
+.MuiTableCell-body {
+    padding: 0 12px !important;
+}
+
+.MuiTableRow-root:nth-child(even) {
+    background-color: #f5f6f7;
+}
+
+.MuiTableHead-root {
+    box-shadow: 0 3px 6px #1d1d1d50;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c) !important;
+}
+
+[data-style-tag="mui"] [data-style-id="list-view"] tbody td[data-style-id="list-actions"] {
+    width: 0 !important;
+}
+
+.MuiTypography-root.text-before.MuiTypography-body1 {
+    font-size: medium !important;
+    font-weight: 400;
+    padding-left: 0.5em !important;
+}
+
+.MuiTableRow-root:hover {
+    background-color: #eaebec;
+    color: grey;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .title {
+    font-size: medium;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px #1d1d1d50;
+}
+
+[data-style-actor-name="CLXBrokerApplicationSummarys"] .title b {
+    font-weight: 500;
+}
+
+.amount01,
+.amount02,
+.amount03 {
+    height: 6em;
+    text-align: center;
+    padding-top: 1em;
+    font-size: initial;
+}
+
+.badges {
+    text-align: center;
+}
+
+.badges .all {
+    padding: 0 2em;
+}
+
+.oan01,
+.oan02,
+.oan03 {
+    font-size: xx-large;
+    color: #5b0e6c;
+    cursor: pointer;
+}
+
+/* Footer Style */
+.copyRight01 {
+    text-align: center;
+    border-top: 1px solid #e8f0f7;
+    color: #e8f0f7;
+}
+
+.copyRight01 p {
+    margin: 0 !important;
+    position: relative;
+    bottom: 0px;
+}
+
+[data-style-actor-name="CLXBrokerFooter"] {
+    margin-bottom: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerFooter"][data-style-id="static-content"] {
+    padding: 10px;
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerFooter"] .col-md-3 .row {
+    padding: 10px 0 !important;
+}
+
+.call01,
+.email01,
+.addr,
+.faq01,
+.pp01 {
+    font-weight: 500;
+}
+
+[data-style-actor-name="CLXBrokerFooter"] .col-md-3:nth-child(2),
+.addr,
+.faq01,
+.pp01 {
+    position: relative;
+    top: 0.8em;
+}
+
+[data-style-actor-name="CLXBrokerFooter"] .col-md-3:nth-child(2) div div,
+.faq01 {
+    padding-bottom: 25px;
+}
+
+.addr {
+    padding-bottom: 15px;
+}
+
+.faq02,
+.pp02 {
+    color: white;
+}
+
+.faq02:hover,
+.pp02:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.fa {
+    padding-right: 5px;
+}
+
+.MuiSvgIcon-root {
+    fill: #5b0e6c !important;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .record-content {
+    border: 2px solid #9817b5;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+[data-style-id="base-panel"][data-style-actor-name="CLXBrokerAppFilterRadio"] {
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+    width: 44em;
+    /* justify-content: space-between; */
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiTypography-root.text-before.MuiTypography-body1 {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff !important;
+    box-shadow: 0 3px 6px #1d1d1d50;
+    border-radius: 4px;
+}
+
+[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerIndividualAndBussiness"] .MuiGrid-spacing-xs-3>.MuiGrid-item,
+[data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-spacing-xs-3>.MuiGrid-item {
+    padding: 6px !important;
+    margin-right: 3em;
+}
+
+[data-style-actor-name="CLXBrokerIndividualAndBussiness"] .MuiGrid-spacing-xs-3 {
+    padding: 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerIndividualAndBussiness"] .MuiListItem-gutters,
+[data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"] .MuiListItem-gutters {
+    padding: 8px 10px 8px 0 !important;
+}
+
+.MuiListItem-gutters {
+    padding: 8px 0 !important;
+}
+
+[data-style-section-name="RadiosIandB"].MuiGrid-root.section.MuiGrid-container.MuiGrid-spacing-xs-3 {
+    padding: 1em !important;
+}
+
+[data-style-section-name="Radios"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root,
+[data-style-section-name="RadiosIandB"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root,
+[data-style-section-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root {
+    border: 1px solid #5b0e6c;
+    border-radius: 4px;
+    background-color: #f5f6f7;
+    font-weight: 400;
+    padding-right: 9em !important;
+    /* box-shadow: 0 3px 6px #1d1d1d50; */
+    /* margin-right: 2em; */
+}
+
+[data-style-section-name="Radios"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root:hover,
+[data-style-section-name="RadiosIandB"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root:hover,
+[data-style-section-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root:hover {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+}
+
+[data-style-section-name="Radios"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root:hover .MuiSvgIcon-root,
+[data-style-section-name="RadiosIandB"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root:hover .MuiSvgIcon-root {
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+    color: #9817b5 !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiListItem-root:hover {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c) !important;
+}
+
+.MuiButton-containedPrimary {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c) !important;
+    color: white !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-top-right.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge:active {
+    background-color: #fff;
+    color: #9817b5;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiButton-label {
+    justify-content: center !important;
+}
+
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiIconButton-root.Mui-disabled {
+    color: #9817b5 !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-fullWidth.MuiInput-fullWidth.MuiInputBase-formControl.MuiInput-formControl {
+    width: 68%;
+    padding-top: 1em;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0.8em;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableSortLabel-icon {
+    opacity: 1 !important;
+    color: #fff;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiSvgIcon-root {
+    fill: #9817b5 !important;
+}
+
+path {
+    stroke: #9817b5;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] path {
+    stroke: #fff;
+}
+
+.appUsreDetails {
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.appUsreDetails:nth-child(3)>span {
+    font-size: smaller;
+}
+
+[data-style-actor-name="CLXBrokerUserInfo"] [data-style-id="tab-step-container"] {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerUserInfo"] .MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    margin: 0 !important;
+    border: none !important;
+}
+
+[data-style-actor-name="CLXBrokerUserInfo"] .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab.Mui-selected,
+[data-style-actor-name="CLXBrokerAddsPartiesDetails"] .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab.Mui-selected {
+    border-bottom: 3px solid #9817b5 !important;
+    background-color: white !important;
+    color: #fff !important;
+}
+
+[data-style-actor-name="CLXBrokerReview"] .MuiTabs-root.tab-bar,
+[data-style-actor-name="CLXBrokerReview"] .MuiTabs-scrollable {
+    display: none !important;
+}
+
+[data-style-actor-name="CLXBrokerUserInfo"] [data-style-id="tab-step-body"] {
+    margin-left: 0 !important;
+}
+
+.MuiTabScrollButton-root {
+    display: none !important;
+}
+
+[data-style-actor-name="CLXBrokerDealerProfilePic"] {
+    width: 60% !important;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division {
+    width: 60%;
+    position: absolute;
+    top: 4%;
+    z-index: 1;
+    right: 2em;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division [data-style-id="card-view-value-entry"] {
+    width: 66% !important;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division .MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded {
+    box-shadow: none !important;
+    border: 2px solid #9817b5;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -3.5em;
+    right: 0;
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge:hover {
+    color: #9817b5;
+    transform: scale(1.5);
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerEditEmailId"] {
+    top: 0%;
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerEditPhoneNumber"] {
+    top: 33%;
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerProfilesEditMailingAdress"] {
+    top: 66%;
+    box-shadow: none !important;
+}
+
+[data-style-actor-name="CLXBrokerEditEmailId"] .MuiToolbar-regular,
+[data-style-actor-name="CLXBrokerEditPhoneNumber"] .MuiToolbar-regular,
+[data-style-actor-name="CLXBrokerProfilesEditMailingAdress"] .MuiToolbar-regular {
+    min-height: 0px !important;
+}
+
+.pp img {
+    width: 125px !important;
+}
+
+[data-style-section-name="changePassword"] .MuiGrid-spacing-xs-3>.MuiGrid-item {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiTypography-root.text-before.MuiTypography-body1 {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .Pwd-Info {
+    padding: 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiFormControl-fullWidth {
+    width: 85% !important;
+}
+
+[data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    margin: 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    min-height: 10px !important;
+    z-index: 2;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] [data-style-id="tab-step-body"],
+[data-style-actor-name="CLXBrokerApplicationFlows"] [data-style-id="tab-step-body"] {
+    margin-left: 250px;
+}
+
+/* Application Stage Styles */
+[data-style-actor-name="CLXBrokerApplicationFlows"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationProcessDivision"],
+[data-style-actor-name="CLXBrokerHeader"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    margin: 0 !important;
+}
+
+/*
+[data-style-actor-name="ClsAppLayoutOneHeader"] img {
+    position: absolute !important;
+    width: 180px !important;
+    height: 50px !important;
+    top: 7px !important;
+    left: 14px !important;
+}
+
+*/
+
+[data-style-actor-name="CLXBrokerApplicationFlows"] .MuiTabs-flexContainer.MuiTabs-flexContainerVertical {
+    width: 250px;
+}
+
+[data-style-stage-name="MyStateCreateApplication"] [data-style-actor-name="CLXBrokerFooter"].contains-content {
+    position: initial;
+    top: 100%;
+    display: block;
+    z-index: 4;
+}
+
+[data-style-actor-name="CLXBrokerPersonalsInformations"].actor-wrapper.contains-division,
+[data-style-actor-name="CLXBrokerListOfPartiedDetails"].appFlexVertical {
+    margin: 0 !important;
+    padding: 0;
+    width: 100% !important;
+}
+
+/* [data-style-actor-name="CLXBrokerAddsPartiesDetails"].actor-wrapper.contains-container {
+    width: 73% !important;
+    position: relative;
+    top: -39.3em !important;
+} */
+
+[data-style-actor-name="CLXBrokerListOfPartiedDetails"].appFlexVertical,
+[data-style-actor-name="CLXBrokerPersonalsInformations"].appFlexVertical,
+[data-style-actor-name="CLXBrokerBusinessInformationsPages"].appFlexVertical,
+[data-style-actor-name="CLXBrokerReview"].appFlexVertical,
+[data-style-actor-name="CLXBrokerAddsPartiesDetails"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded,
+[data-style-actor-name="CLXBrokerReview"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded,
+[data-style-actor-name="CLXBrokerAddCollateralSteps"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded,
+[data-style-actor-name="CLXClientInfoContainer"].appFlexVertical,
+[data-style-actor-name="CLXPartiesContainer"].appFlexVertical,
+[data-style-actor-name="CLXCollateralContainer"].appFlexVertical,
+[data-style-actor-name="CLXDocumentAndTaskContainer"].appFlexVertical,
+[data-style-actor-name="CLXReviewContainer"].appFlexVertical {
+    margin: 0 !important;
+    border: none !important;
+}
+
+[data-style-actor-name="CLXBrokerAddsPartiesDetails"] .MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded,
+[data-style-actor-name="CLXBrokerReview"] .MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    margin: 0;
+    padding: 0;
+}
+
+[data-style-actor-name="CLXBrokerAddsPartiesDetails"] [data-style-id="tab-step-body"],
+[data-style-actor-name="CLXBrokerReview"] [data-style-id="tab-step-body"] {
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerAppId"] .MuiTable-root {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head,
+[data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body {
+    text-align: center;
+}
+
+[data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head {
+    border: none !important;
+    background-color: #9817b5 !important;
+    font-weight: 500 !important;
+}
+
+[data-style-actor-name="CLXBrokerAppId"] .MuiTypography-body1 {
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+[data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body {
+    background-color: #f5f6f7;
+}
+
+[data-style-actor-name="CLXBrokerAppId"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+[data-style-actor-name="CLXBrokerGettingStarted"].appFlexVertical,
+[data-style-actor-name="CLXBrokerCollateralsDetails"].appFlexVertical,
+[data-style-actor-name="CLXBrokerDocumentsPage"].appFlexVertical {
+    margin: 0 !important;
+}
+
+
+[data-style-id="field"] {
+    padding: 0 6px !important;
+}
+
+
+[data-style-actor-name="CLXBrokerAppId"] label.MuiFormControlLabel-root,
+[data-style-actor-name="CLXBrokerLoanSummary"] label.MuiFormControlLabel-root {
+    position: relative;
+    top: 1.5em;
+}
+
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] .LoanDetails .row:first-child,
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] .PersonalDetails .row:first-child,
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] .Income .row:first-child,
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] .Expense .row:first-child {
+    background-color: #9817b5;
+    color: #fff;
+    padding: 0 10px;
+}
+
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] h3 {
+    margin: 15px !important;
+}
+
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] b,
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] h4 {
+    font-weight: 400;
+}
+
+[data-style-actor-name="CLXBrokerAppSummaryPopup"] .LoanSummary {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+[data-style-actor-name="CLXBrokerReviewApplication"] [data-style-id="card-view-value"] {
+    font-size: larger;
+    font-weight: 400;
+}
+
+[data-style-actor-name="CLXBrokerUnderCunstruction"] .MuiPaper-rounded {
+    height: 500px;
+}
+
+.MuiTabs-flexContainerVertical img {
+    width: 20%;
+    margin-left: 7.2em;
+}
+
+[data-style-stage-name="MyStateCreateApplication"] .MuiTabs-flexContainerVertical img {
+    margin-left: 0.4em !important;
+}
+
+.MuiTabs-root.tab-bar.MuiTabs-vertical .MuiTab-textColorPrimary:last-child {
+    position: absolute !important;
+    bottom: 10.5% !important;
+    width: 250px !important;
+}
+
+.MuiTabs-root.tab-bar.MuiTabs-vertical .MuiTab-textColorPrimary:last-child span:first-child {
+    position: relative !important;
+    bottom: 0px !important;
+    display: inline-grid;
+
+}
+
+[data-style-stage-name="MyStateCreateApplication"] .MuiTabs-root.tab-bar.MuiTabs-vertical .MuiTab-textColorPrimary:last-child span:first-child {
+    display: initial !important;
+}
+
+.MuiTabs-flexContainer.MuiTabs-flexContainerVertical {
+    height: 100vh !important;
+    width: 250px !important;
+}
+
+[data-style-actor-name="CLXBrokerLoanSummary"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+[data-style-actor-name="CLXBrokerLoanSummary"] h4,
+[data-style-actor-name="CLXBrokerListOfDocs"] .MuiTypography-root.text-before.MuiTypography-body1 {
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 1.167;
+}
+
+[data-style-actor-name="CLXBrokerListOfDocs"] .MuiTypography-root.text-before.MuiTypography-body1 {
+    background-color: #5b0e6c;
+    color: #fff;
+    padding: 12px !important;
+    font-weight: 400 !important;
+    font-size: medium !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfDocs"] div:first-child {
+    overflow-x: hidden !important;
+}
+
+
+[data-style-actor-name="CLXBrokerListOfApplications"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-top-right.MuiButton-containedSecondary.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+    background-color: #2461a7 !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfDocs"] tr.MuiTableRow-root.MuiTableRow-head {
+    display: none;
+}
+
+[data-style-id="list-view"][data-style-actor-name="CLXBrokerGuarantorsDisplay"] .MuiTable-root,
+[data-style-actor-name="CLXBrokerListOfDocs"] .MuiTable-root {
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerDisclosure"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"] .MuiFormControl-root.MuiTextField-root.MuiFormControl-marginNormal.MuiFormControl-fullWidth {
+    width: 90%;
+}
+
+[data-style-actor-name="CLXBrokerEditProfiles"] .MuiGrid-spacing-xs-3>.MuiGrid-item {
+    padding: 0 !important;
+}
+
+/* [data-style-actor-name="CLXBrokerEditProfiles"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+    top: -5em;
+    right: 1em;
+} */
+
+[data-style-actor-name="CLXBrokerEditProfiles"] .MuiOutlinedInput-multiline {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerPartiesList"] .MuiTableHead-root tr th:nth-child(7),
+[data-style-actor-name="CLXBrokerCollateralInformation"] .MuiTableHead-root tr th:nth-child(4),
+[data-style-actor-name="CLXBrokerPartiesListWithBusinessDetails"] .MuiTableHead-root tr th:nth-child(6),
+[data-style-actor-name="CLXBrokerAssetInformation"] .MuiTableHead-root tr th:nth-child(4),
+[data-style-actor-name="CLXBrokerListOfOwner"] .MuiTableHead-root tr th:nth-child(4),
+[data-style-actor-name="CLXBrokerDocTasks"] .MuiTableHead-root tr th:nth-child(6),
+[data-style-actor-name="CLXBrokerUploadDocumentPanel"] .MuiTableHead-root tr th:nth-child(2) {
+    width: 1em;
+}
+
+[data-style-actor-name="CLXBrokerLiabilitiesInformation"] .MuiTableHead-root tr th:nth-child(5),
+[data-style-actor-name="CLXBrokerExpensesDetails"] .MuiTableHead-root tr th:nth-child(5) {
+    width: 0em;
+}
+
+[data-style-actor-name="CLXBrokerPartiesList"] .MuiTableHead-root tr th:nth-child(7)::before,
+[data-style-actor-name="CLXBrokerCollateralInformation"] .MuiTableHead-root tr th:nth-child(4)::before,
+[data-style-actor-name="CLXBrokerPartiesListWithBusinessDetails"] .MuiTableHead-root tr th:nth-child(6)::before,
+[data-style-actor-name="CLXBrokerAssetInformation"] .MuiTableHead-root tr th:nth-child(4)::before,
+[data-style-actor-name="CLXBrokerLiabilitiesInformation"] .MuiTableHead-root tr th:nth-child(5)::before,
+[data-style-actor-name="CLXBrokerExpensesDetails"] .MuiTableHead-root tr th:nth-child(5)::before,
+[data-style-actor-name="CLXBrokerListOfOwner"] .MuiTableHead-root tr th:nth-child(4)::before,
+[data-style-actor-name="CLXBrokerDocTasks"] .MuiTableHead-root tr th:nth-child(6)::before,
+[data-style-actor-name="CLXBrokerUploadDocumentPanel"] .MuiTableHead-root tr th:nth-child(2)::before {
+    padding: 0 6px;
+    content: "Actions";
+    color: #fff;
+}
+
+[data-style-actor-name="CLXBrokerUploadDocumentPanel"]>div {
+    overflow-x: hidden !important;
+}
+
+[data-style-actor-name="CLXBrokerNotification"][data-style-id="static-content"] {
+    border: 2px solid #9817b5 !important;
+    border-radius: 4px !important;
+    background-color: #f5f6f7 !important;
+    /* margin: 0 !important; */
+}
+
+[data-style-actor-name="CLXBrokerNotification"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    display: inline;
+    float: right;
+    padding-right: 0px !important;
+    z-index: 5;
+    top: 27px;
+}
+
+[data-style-actor-name="CLXBrokerNotification"] .MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerNotification"] .MuiTypography-root.MuiTypography-body1 {
+    overflow: hidden;
+}
+
+[data-style-actor-name="CLXBrokerNotification"] .col-md-10 {
+    left: 1%;
+    padding-left: 2.5em;
+	padding-top: 3px;
+    border-left: 5px solid #9817b5;
+    width: 98%;
+    height: 7em;
+}
+
+.notificationIcon {
+    padding-left: 25px;
+    padding-top: 34px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #9817b5;
+    color: #fff;
+}
+
+.notificationBold {
+    position: absolute;
+    left: 5.2%;
+    font-weight: 500;
+    top: -10%;
+    font-size: x-large;
+    padding: 1em 0.5em;
+}
+
+.nofificationDetails {
+    position: absolute;
+    top: 32%;
+    left: 0%;
+    font-size: large;
+}
+
+/* table specific indentation */
+
+[data-style-stage-name="Home"] [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-head:nth-child(5),
+[data-style-stage-name="Home"] [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-body:nth-child(5),
+[data-style-stage-name="Home"] [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-head:nth-child(6),
+[data-style-stage-name="Home"] [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-body:nth-child(6) {
+    text-align: right !important;
+}
+
+[data-style-stage-name="Home"] [data-style-actor-name="CLXBrokerListOfApplications"] [role=button]:hover,
+.MuiTableSortLabel-root.MuiTableSortLabel-active {
+    color: #fff !important;
+}
+
+[data-style-actor-name="CLXBrokerCollateralSecurity"] .MuiTable-root {
+    margin: 0 !important;
+}
+
+[data-style-overlay-name="CLXBrokerEditMailingAddressProfiles"] [data-style-id="modal-dialog"].large {
+    height: 60%;
+}
+
+[data-style-actor-name="CLXBrokerHelp"] h4 {
+    font-size: 24px;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+    padding: 1em;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px #1d1d1d50;
+}
+
+[data-style-actor-name="CLXBrokerHelp"].MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded {
+    /* margin: 0 !important; */
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerHelp"] li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+[data-style-actor-name="CLXBrokerHelp"] .col-md-12 {
+    border: 2px solid #9817b5;
+    border-radius: 6px;
+    width: 97.5%;
+    margin: 4px 1em;
+}
+
+[data-style-actor-name="CLXBrokerHelp"] .MuiTypography-body1 {
+    font-size: 16px;
+    /* padding-bottom: 1em; */
+    background-color: #f5f6f7;
+}
+
+[data-style-actor-name="CLXBrokerHelp"].actor-wrapper.contains-content {
+    height: 100vh;
+}
+
+.faqContents {
+    padding: 1.5em;
+}
+
+[data-style-actor-name="CLXBrokerBusinessYesAndNo"] .MuiListItem-root:hover {
+    background-color: #fff !important;
+    color: #37444e;
+}
+
+[data-style-tag="mui"] [data-style-id="list-view"] tbody tr.clickable.highlighted th {
+    padding: 5px 1em;
+    background-color: #9817b5;
+}
+
+[data-style-actor-name="CLXBrokerListOfDocs"] tr.clickable.highlighted td[data-style-id="list-actions"] button {
+    padding: 8px 16px !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfDocs"] tr.clickable.highlighted th {
+    padding: 10px !important;
+}
+
+[data-style-tag="mui"] [data-style-id="list-view"] tbody tr.clickable.highlighted td[data-style-id="list-actions"],
+[data-style-tag="mui"] [data-style-id="list-view"] tbody tr.clickable.highlighted td[data-style-id="list-actions"] button {
+    padding: 0;
+}
+
+[data-style-actor-name="CLXBrokerDocCatogory"] .MuiTableCell-body {
+    padding: 6px !important;
+}
+
+[data-style-actor-name="CLXBrokerDocCatogory"] .MuiTable-root {
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerDocCatogory"] tr.clickable.highlighted th,
+[data-style-actor-name="CLXBrokerDocCatogory"] tr.clickable.highlighted td,
+[data-style-actor-name="CLXBrokerDocCatogory"] tr.clickable th,
+[data-style-actor-name="CLXBrokerDocCatogory"] tr.clickable td {
+    padding: 10px 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfAccountDeatisParty"] .MuiTypography-body1 {
+    padding: 6px !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] [data-style-id="tabs"] {
+    height: 100% !important;
+}
+
+[data-style-actor-name="CLXBrokerHomeContainer"].actor-wrapper.contains-division {
+    padding: 0 !important;
+}
+
+[data-style-actor-name="CLXBrokerAnalytics"].appFlexVertical {
+    margin: 0 !important;
+}
+
+[data-style-tag="mui"][data-style-id="app"] [data-style-id="text-before"],
+[data-style-tag="mui"][data-style-id="app"] [data-style-id="text-after"],
+[data-style-tag="mui"][data-style-id="app"] [data-style-id="section-title"] {
+    padding: 0.5rem 1rem 0.46rem 12px !important;
+    margin: 0;
+}
+
+[data-style-field-name="radio_YandN"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-sm-4:first-child {
+    color: green;
+}
+
+[data-style-field-name="radio_YandN"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-sm-4:nth-child(2) {
+    color: red;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge.Mui-disabled.Mui-disabled {
+    background-color: #9817b5 !important;
+    color: #afafaf !important;
+}
+
+[data-style-actor-name="CLXBrokerDocTasks"] [data-style-id="list-actions"] {
+    position: relative;
+    left: -50px;
+}
+
+[data-style-actor-name="CLXBrokerDocTasks"] [data-style-id="list-actions"] button {
+    padding: 0 3em !important;
+    position: relative;
+    left: 3em;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiButton-containedSecondary {
+    background-color: #9817b5 !important;
+}
+
+[data-style-actor-name="CLXBrokerPartyCollateral"] tr.clickable.highlighted th,
+[data-style-actor-name="CLXBrokerPartyCollateral"] tr.clickable.highlighted td {
+    background-color: #9817b5;
+    padding: 6px 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerPartyCollateral"] tr.clickable,
+[data-style-actor-name="CLXBrokerPartyCollateral"] th.MuiTableCell-root.MuiTableCell-body {
+    padding: 6px 1em !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] img {
+    height: 12px !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfAccountDeatisParty"] tr.clickable.highlighted td,
+[data-style-actor-name="CLXBrokerListOfAccountDeatisParty"] tr.clickable.highlighted th {
+    background-color: #9817b5;
+    padding: 6px 1.5em !important;
+}
+
+[data-style-actor-name="CLXBrokerUploadDocumentPanel"] th.MuiTableCell-root.MuiTableCell-body{
+    max-width:400px;
+    word-wrap:break-word;
+}
+
+[data-style-actor-name="CLXBrokerListOfOwner"] tr.clickable.highlighted,
+[data-style-actor-name="CLXBrokerListOfOwner"] tr.clickable.highlighted td,
+[data-style-actor-name="CLXBrokerListOfOwner"] tr.clickable.highlighted th {
+    background-color: #9817b5;
+}
+
+[data-style-actor-name="CLXBrokerListOfOwner"] tr.clickable.highlighted td[data-style-id="list-actions"] button {
+    padding: 10px !important;
+}
+
+[data-style-actor-name="CLXBrokerListOfOwner"] .collaterlaOwener {
+    color: #000;
+    font-weight: 400;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiButton-containedSecondary {
+    background-color: #6e6a6a;
+}
+
+/*Task CSS*/
+span#TaskCount {
+    color: #f43673 !important;
+}
+
+span.Task0 {
+    display: none;
+}
+
+.taskCountValue {
+    font-size: 15px;
+}
+
+[data-style-actor-name="CLXBrokerCollateralOwnership"] [data-style-field-name="clcommon__Account__c"] {
+    display: none !important;
+}
+
+[data-style-actor-name="CLXBrokerBasicBusinessInfo"] [data-style-field-name="clcommon__Legal_Entity_Type__c"] {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerIndividualDetails"] [data-style-field-name="clcommon__Legal_Entity_Type__c"] {
+    display: none;
+}
+
+button[aria-label="MobileMenu"],
+button[aria-label="MobileMenu"] .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-top.MuiToolbar-gutters {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"].actor-wrapper.contains-component {
+    position: relative;
+    top: -6px;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] .MuiToolbar-regular {
+    min-height: 32px !important;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] .MuiTypography-gutterBottom {
+    margin-bottom: 3px;
+}
+
+.taskListdetails {
+    font-size: medium !important;
+    font-weight: 400 !important;
+}
+
+
+
+div[data-style-actor-name="CLXAppSummaryWidget"] .MuiPaper-elevation2,
+div[data-style-actor-name="CLXAppSummaryWidget"] .MuiPaper-elevation1 {
+    box-shadow: none !important;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+div[data-style-actor-name="CLXAppSummaryWidget"] [data-style-id="card-view-value"] {
+    font-weight: 500;
+}
+
+div[data-style-actor-name="CLXAppSummaryWidget"].appFlexVertical>div {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+div[data-style-actor-name="CLXProgressWidget"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXLoanSummaryWidget"] .MuiGrid-item,
+div[data-style-actor-name="CLXLoanSummaryWidget"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPAvailableOfferSummary"] .MuiGrid-item,
+div[data-style-actor-name="CCBPAvailableOfferSummary"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPSliderApplicationSummary"] .MuiGrid-item,
+div[data-style-actor-name="CCBPSliderApplicationSummary"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPCommissionSummary"] .MuiGrid-item,
+div[data-style-actor-name="CCBPCommissionSummary"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPApplicationSummaryWidget"] .MuiGrid-item,
+div[data-style-actor-name="CCBPApplicationSummaryWidget"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .MuiGrid-item,
+div[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .MuiGrid-item,
+div[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .MuiCardContent-root,
+div[data-style-actor-name="CLXGuarantorsWidget"] .MuiGrid-item,
+div[data-style-actor-name="CLXGuarantorsWidget"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPPartiesSummary"] .MuiGrid-item,
+div[data-style-actor-name="CCBPPartiesSummary"] .MuiCardContent-root,
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] .MuiGrid-item,
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] .MuiCardContent-root,
+div[data-style-actor-name="CLXCollateralWidget"] .MuiGrid-item,
+div[data-style-actor-name="CLXProgressWidget"] .MuiPaper-root,
+div[data-style-actor-name="CLXCollateralWidget"] .MuiCardContent-root {
+    padding: 0px !important;
+}
+
+div[data-style-actor-name="CLXLoanSummaryWidget"].actor-wrapper,
+div[data-style-actor-name="CCBPAvailableOfferSummary"].actor-wrapper,
+div[data-style-actor-name="CCBPSliderApplicationSummary"].actor-wrapper,
+div[data-style-actor-name="CCBPCommissionSummary"].actor-wrapper,
+div[data-style-actor-name="CCBPApplicationSummaryWidget"].actor-wrapper,
+div[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"].actor-wrapper,
+div[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"].actor-wrapper,
+div[data-style-actor-name="CLXGuarantorsWidget"].actor-wrapper,
+div[data-style-actor-name="CCBPPartiesSummary"].actor-wrapper,
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"].actor-wrapper,
+div[data-style-actor-name="CLXCollateralWidget"].actor-wrapper {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+div[data-style-actor-name="CLXAppSummaryWidget"].appFlexVertical {
+
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 10px !important;
+}
+
+div[data-style-actor-name="notesWidget"] .toolbar-at-top,
+div[data-style-actor-name="CLXCollateralWidget"] .toolbar-at-top,
+div[data-style-actor-name="CLXLoanSummaryWidget"] .toolbar-at-top,
+div[data-style-actor-name="CCBPAvailableOfferSummary"] .toolbar-at-top,
+div[data-style-actor-name="CCBPSliderApplicationSummary"] .toolbar-at-top,
+div[data-style-actor-name="CCBPCommissionSummary"] .toolbar-at-top,
+div[data-style-actor-name="CCBPApplicationSummaryWidget"] .toolbar-at-top,
+div[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .toolbar-at-top,
+div[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .toolbar-at-top,
+div[data-style-actor-name="CLXGuarantorsWidget"] .toolbar-at-top,
+div[data-style-actor-name="CCBPPartiesSummary"] .toolbar-at-top,
+div[data-style-actor-name="CCBPStripsPending"] .toolbar-at-top,
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] .toolbar-at-top {
+    min-height: 1px !important;
+    padding: 0px !important;
+}
+
+div[data-style-actor-name="notesWidget"] .toolbar-at-top h1,
+div[data-style-actor-name="CLXCollateralWidget"] .toolbar-at-top h1,
+div[data-style-actor-name="CLXLoanSummaryWidget"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPAvailableOfferSummary"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPSliderApplicationSummary"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPCommissionSummary"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPApplicationSummaryWidget"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .toolbar-at-top h1,
+div[data-style-actor-name="CLXGuarantorsWidget"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPPartiesSummary"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPStripsPending"] .toolbar-at-top h1,
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] .toolbar-at-top h1 {
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+div[data-style-actor-name="CLXGuarantorsWidget"] div[data-style-id="field-label"],
+div[data-style-actor-name="CCBPPartiesSummary"] div[data-style-id="field-label"],
+div[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] div[data-style-id="field-label"],
+div[data-style-actor-name="CLXCollateralWidget"] div[data-style-id="field-label"] {
+    display: none;
+}
+
+div[data-style-actor-name="CCBPStripsPending"] .actor-wrapper.contains-component.with-width {
+	padding-left: 10px !important;
+}
+
+div[data-style-actor-name="CCBPStripsPending"] .MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded {
+	box-shadow: none !important;
+}
+
+div[data-style-actor-name="CLXCollateralWidget"] .MuiGrid-root.section {
+
+    flex-wrap: nowrap;
+}
+
+div[data-style-actor-name="CLXCollateralWidget"] .MuiGrid-root>div {
+    margin: 0px !important;
+    flex-basis: 100%;
+
+}
+
+[data-style-actor-name="CLXBrokerCollateralOwnership"] [data-style-field-name="clcommon__Account__c"] {
+    display: block !important;
+}
+
+.succsessMessagess {
+    position: absolute !important;
+    transform: translate(-50%, 0);
+    left: 70%;
+    bottom: 28%;
+    font-size: 16px;
+    color: #5b0e6c;
+}
+
+.taskListdetails {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="Subject"] {
+    justify-content: left !important;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="genesis__Application__r_Name"] {
+    justify-content: left !important;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="CreatedDate"] {
+    margin-top: -30px;
+    display: flow-root !important;
+}
+
+[data-style-actor-name="CLXBrokerApplicationListDivision"] button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab:nth-child(3) {
+    display: none;
+}
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 600px) {
+
+    [data-style-actor-name="CLXBrokerApplicationListDivision"] button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab:nth-child(3) {
+        display: block;
+    }
+	
+	[data-style-actor-name="CCBPConcurrentContractDetails"].actor-wrapper.contains-component {
+    display:none;
+}
+	
+	[data-style-actor-name="CLXBrokerReview"] .MuiPaper-root.MuiPaper-elevation0.MuiPaper-rounded { 
+		position: fixed !important;
+		height: 80% !important;
+		overflow-y: auto !important;
+	}
+
+    [data-style-actor-name="CCBPEligibleAccountsForConcurrentLoans"] .MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded { 
+		position: fixed !important;
+		height: 80% !important;
+		overflow-y: auto !important;
+	}
+	
+	[data-style-actor-name="CLXBrokerBusinessYesAndNo"] .MuiGrid-root.section.MuiGrid-container.MuiGrid-spacing-xs-3 {
+		position: fixed !important;
+	}
+	
+	[data-style-actor-name="CCBPEligibleAccountsForConcurrentLoans"] .MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+		position: fixed !important;
+	}
+	
+	[data-style-actor-name="CLXBrokerListOfAccountDeatisParty"] .MuiInputBase-input.MuiInput-input {
+		padding-top: 20px !important;
+	}
+	
+	[data-style-actor-name="CLXBrokerListOfAccountDeatisParty"] MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+		font-size: 11px !important;
+	}
+	
+	[data-style-actor-name="CLXBrokerApplicationSummarys"] .row {
+        display: grid;
+    }
+	
+	[data-style-actor-name="Alltasks"] ul>li {
+        color: #fff !important;
+    }
+	
+	[data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+	[data-style-actor-name="CLXBrokerBasicBusinessInfo"] h3 {
+        font-size: 18px;
+    }
+	
+	[data-style-actor-name="CLXBrokerPartiesList"] h3 {
+        font-size: 18px;
+    }
+	
+	[data-style-actor-name="CCBPDocumentsMessage"] h3 {
+        font-size: 18px;
+    }
+
+	[data-style-actor-name="CCBPApplicationSubmittedPage"] h3 {
+        font-size: 18px;
+    }
+	
+    [data-style-actor-name="CLXBrokerHomeContainer"] [data-style-actor-name="CLXBrokerRecentTaskedActivities"],
+    [data-style-actor-name="CLXBrokerGettingStarted"] [data-style-actor-name="CLXAppSummaryWidget"],
+    [data-style-actor-name="CLXBrokerBusinessInformationsPages"] [data-style-actor-name="CLXAppSummaryWidget"],
+    [data-style-actor-name="CLXBrokerListOfPartiedDetails"] [data-style-actor-name="CLXAppSummaryWidget"],
+    [data-style-actor-name="CLXBrokerCollateralsDetails"] [data-style-actor-name="CLXAppSummaryWidget"],
+    [data-style-actor-name="CLXBrokerDocumentsPage"] [data-style-actor-name="CLXAppSummaryWidget"] {
+        display: none;
+    }
+
+    div[data-style-actor-name="CLXAppSummaryWidget"] .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+        padding: 6px;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneContent"] {
+        top: 10em !important;
+    }
+
+    .MuiTabs-root.tab-bar.MuiTabs-vertical {
+        display: none;
+    }
+
+    [data-style-actor-name="CLXBrokerApplicationListDivision"] [data-style-id="tab-step-body"],
+    [data-style-actor-name="CLXBrokerApplicationFlows"] [data-style-id="tab-step-body"] {
+        margin-left: 0;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneHeader"].actor-wrapper.contains-division.layout {
+        height: 10em !important;
+        position: absolute;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneMain"].actor-wrapper.contains-division {
+        position: absolute;
+        top: 10em !important;
+    }
+
+    [data-style-id="app"][data-client="phone"] div.actor-wrapper[data-style-actor-name="ClsAppLayoutOne"] div.actor-wrapper[data-style-actor-name="ClsAppLayoutOneMain"] {
+        top: 10em !important;
+    }
+
+    .notificationBold {
+        /* position: absolute;
+        left: 44%;
+        top: -40%; */
+        display: none;
+    }
+
+    .nofificationDetails {
+        position: absolute;
+        top: 4%;
+        left: 4%;
+        width: fit-content;
+        line-height: 1.2;
+    }
+
+    .notificationIcon {
+        /* position: absolute;
+        left: 6px;
+        text-align: center;
+        top: -5px;
+        font-size: 20px; */
+        display: none;
+    }
+
+
+    [data-style-actor-name="CLXBrokerNotification"] .col-md-10 {
+        border: none;
+    }
+
+    [data-style-actor-name="CLXBrokerApplicationSummarys"] .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    [data-style-actor-name="CLXBrokerNotification"] div:first-child {
+        padding: 5px !important;
+    }
+
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-head:nth-child(2),
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-root.MuiTableCell-body:nth-child(2),
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-head:nth-child(4),
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-root.MuiTableCell-body:nth-child(4),
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-head:nth-child(5),
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTableCell-root.MuiTableCell-body:nth-child(5) {
+        display: none;
+    }
+
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiTable-root {
+        margin: 0 !important;
+    }
+
+    [data-style-section-name="CLXBrokerPartyIndividualAndBusiness"] .MuiFormGroup-root .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+        margin: 0 !important;
+    }
+
+    [data-style-section-name="RadiosIandB"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root,
+    [data-style-section-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-grid-sm-4 .MuiFormControlLabel-root {
+        margin-right: 3em !important;
+        position: relative !important;
+        left: 2.5em !important;
+        padding-right: 2em !important;
+    }
+
+    [data-style-actor-name="CLXBrokerFooter"].contains-content {
+        position: fixed !important;
+        bottom: 0 !important;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    [data-style-tag="mui"] [data-style-id="card-view"] [data-style-id="card-view-value-entry"] [data-style-id="card-view-value"] {
+        font-weight: 500;
+    }
+
+    .MuiTypography-root.text-before.MuiTypography-body1 {
+        font-size: large !important;
+        font-weight: 500;
+    }
+
+    [data-style-actor-name="CLXBrokerHeaderContent"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+        width: revert;
+        bottom: 0em;
+        left: -7%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    [data-style-actor-name="CLXBrokerHeader"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+        width: max-content;
+        bottom: -5px;
+        left: 4%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* [data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-spacing-xs-3 {
+        display: initial !important;
+    } */
+
+    [data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"] .MuiGrid-spacing-xs-3>.MuiGrid-item {
+        display: contents !important;
+    }
+
+    [data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"] .radiobuttons fieldset {
+        padding: 0 !important;
+    }
+
+    [data-style-actor-name="CLXBrokerPartyIndividualAndBusiness"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded>div:nth-child(2) {
+        overflow-x: inherit !important;
+        height: 4.5em !important;
+    }
+
+    [data-style-actor-name="CLXBrokerHeaderContent"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-bottom-right.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+        position: absolute;
+        top: -52px;
+        right: -2%;
+        font-size: 25px !important;
+        background-color: #5b0e6c !important;
+        color: #fff;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    [data-style-actor-name="CLXBrokerHeader"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-bottom-right.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+        position: absolute;
+        top: -52px;
+        right: 0.5%;
+        font-size: 25px !important;
+        background-color: #5b0e6c !important;
+        color: #fff;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneHeader"] img {
+        position: relative;
+        width: 190px !important;
+        height: auto;
+        top: 4px !important;
+        left: 2% !important;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneHeader"] button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-top-left.MuiButton-containedPrimary.MuiButton-containedSizeLarge.MuiButton-sizeLarge {
+        position: absolute !important;
+        top: -8px !important;
+    }
+	
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head {
+        background-image: linear-gradient(to right, #9817b5, #5b0e6c) !important;
+    }
+
+    [data-style-actor-name="ClsAppLayoutOneHeader"] .menu-action {
+        position: absolute;
+        top: -87%;
+        right: -13px;
+    }
+
+    [data-style-actor-name="CLXBrokerAddsPartiesDetails"] .MuiTabs-scrollButtonsDesktop {
+        display: inline-block !important;
+        width: 32px !important;
+        position: relative;
+        top: 12px;
+    }
+
+    button[aria-label="MobileMenu"] {
+        display: block;
+    }
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+        width: 100% !important;
+        height: 100vh !important;
+        text-align: center !important;
+        left: 0px !important;
+        top: 0em !important;
+        background-color: #fff;
+        max-height: 100vh;
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded li.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+        flex-direction: row !important;
+        font-size: 22px !important;
+        padding: 16px !important;
+        border-bottom: 1px solid #9817b5;
+    }
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded li.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button img {
+		max-width: 100% !important;
+		height: auto !important;
+    }
+
+    #Menu .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(1),
+    #Menus .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(1) {
+        background-color: #9817b5 !important;
+		color: #fff !important;
+    }
+	
+	#Menu .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(2),
+    #Menus .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(2):before {
+        content: "Close";
+    }
+
+    div#menu- ul>li:empty {
+        display: none;
+    }
+
+    #Menu .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(2),
+    #Menus .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(2) {
+		position: absolute;
+		right: 0px;
+		font-size: 30px !important;
+		color: #fff;
+		top: 8px;
+		border: none;
+		/* border-radius: 50%; */
+		line-height: normal;
+		min-height: 1px;
+		padding: 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+		height: 50px;
+		border: none !important;
+    }
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul>li:nth-child(2) span {
+        padding: 0px;
+        font-size: 30px !important;
+    }
+
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded>ul {
+        padding-top: 0px;
+    }
+
+    .amount01,
+    .amount02,
+    .amount03 {
+        display: inline-block;
+        margin-left: 14px;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3[data-style-section-name="Radios"] {
+        width: 100vw !important;
+        height: 11em;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(1) {
+        position: absolute;
+        left: 2.5%;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(2) {
+        position: absolute;
+        left: 52%;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(3) {
+        position: absolute;
+        top: 5em;
+        left: 2.5%;
+    }
+
+    [data-style-actor-name="CLXBrokerUserInfo"] .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.tab {
+        width: 50%;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(3) .MuiFormControlLabel-root {
+        padding-right: 2.5em !important;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(4) {
+        position: absolute;
+        top: 5em;
+        left: 52%;
+    }
+
+    [data-style-actor-name="CLXBrokerAppFilterRadio"] .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-4:nth-child(4) .MuiFormControlLabel-root {
+        padding-right: 5.5em !important;
+    }
+
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+        width: 170px !important;
+    }
+
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-head:nth-child(2),
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-root.MuiTableCell-body:nth-child(2),
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-head:nth-child(4),
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-root.MuiTableCell-body:nth-child(4),
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-head:nth-child(7),
+    [data-style-actor-name="CLXBrokerListOfApplications"] .MuiTableCell-root.MuiTableCell-body:nth-child(7) {
+        display: none;
+    }
+
+    [data-style-actor-name="CLXBrokerHelp"] .col-md-12 {
+        width: initial;
+    }
+
+    [data-style-actor-name="CLXBrokerDealerProfilePic"] {
+        width: inherit !important;
+    }
+
+    [data-style-actor-name="CLXBrokerMyProfilesTabs"].actor-wrapper.contains-division {
+        height: 90vh;
+    }
+
+    [data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division {
+        width: 87%;
+        position: absolute;
+        top: 42%;
+        right: 8%;
+    }
+
+    [data-style-actor-name="CLXBrokerEditProfiles"] .MuiCardContent-root {
+        width: 21em !important;
+    }
+
+    [data-style-actor-name="CLXBrokerChangePasswordPanel"].actor-wrapper [data-style-id="base-panel"]>div {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    [data-style-actor-name="CLXBrokerHeader"] .MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.MuiToolbar-gutters {
+        width: max-content;
+        bottom: 0em;
+        left: 4%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    [data-style-actor-name="CLXBrokerApplicationProcessDivision"] {
+        margin: auto !important;
+    }
+
+    [data-style-id="app"][data-client="phone"] [data-style-actor-name="CLXBrokerApplications"].appFlexVertical,
+    [data-style-id="app"][data-client="phone"] [data-style-actor-name="CLXBrokerListOfPartiedDetails"].appFlexVertical,
+    [data-style-id="app"][data-client="phone"] [data-style-actor-name="CLXBrokerApplicationProcessDivision"].appFlexVertical {
+        width: 100vw !important;
+    }
+
+    [data-style-actor-name="CLXBrokerCollateralsDetails"].actor-wrapper.contains-division {
+        width: 100vw !important;
+    }
+
+    [data-style-actor-name="CLXBrokerEditProfiles"].actor-wrapper.contains-division {
+        width: 100vw;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    [data-style-actor-name="CLXBrokerChangePasswordPanel"] .MuiFormControl-fullWidth {
+        width: 100% !important;
+    }
+
+    [data-style-actor-name="CLXBrokerRecentActivities"].actor-wrapper.contains-division.with-width {
+        display: block;
+        width: 100%;
+    }
+
+    [data-style-actor-name="CLXBrokerRecentTaskedActivities"].actor-wrapper.contains-division.with-width {
+        display: block;
+        width: 100%;
+    }
+
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head:nth-child(2),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head:nth-child(3),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head:nth-child(4),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-head:nth-child(5),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body:nth-child(2),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body:nth-child(3),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body:nth-child(4),
+    [data-style-actor-name="CLXBrokerAppId"] .MuiTableCell-body:nth-child(5) {
+        display: none;
+    }
+
+    [data-style-actor-name="CLXBrokerApplicationListDivision"] [data-style-id="tabs"] {
+        width: 100vw !important;
+    }
+
+    [data-style-actor-name="CLXBrokerLoanDetailsPreFetched"].actor-wrapper.contains-component,
+    [data-style-actor-name="CLXBrokerPersonalsInformations"].actor-wrapper.contains-division,
+    [data-style-actor-name="CLXBrokerCollateralsDetails"].actor-wrapper.contains-division,
+    [data-style-actor-name="CLXBrokerDocumentsPage"].actor-wrapper.contains-division {
+        height: 100vh !important;
+    }
+
+    .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:last-child [data-style-id="card-view-value"] {
+        font-size: large !important;
+        color: cadetblue;
+    }
+
+    .record-content .MuiTypography-root.smallFont.outlinedVariant.string.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    .record-content .MuiTypography-root.smallFont.outlinedVariant.string.MuiTypography-body1:nth-child(1) [data-style-id="card-view-value"] {
+        color: #9817b5;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CLXLoanSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPAvailableOfferSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPSliderApplicationSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPCommissionSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(5) [data-style-id="card-view-value"] {
+        color: seagreen;
+        font-size: large;
+    }
+
+    [data-style-actor-name="CLXLoanSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPAvailableOfferSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPSliderApplicationSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPCommissionSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(4) [data-style-id="card-view-value"] {
+        color: darkcyan;
+    }
+
+    [data-style-actor-name="CLXLoanSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPAvailableOfferSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPSliderApplicationSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPCommissionSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.picklist.MuiTypography-body1:nth-child(6) [data-style-id="card-view-value"] {
+        color: goldenrod;
+    }
+
+    [data-style-actor-name="CLXLoanSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPAvailableOfferSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPSliderApplicationSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPCommissionSummary"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryWidget"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] .record-content .MuiTypography-root.smallFont.outlinedVariant.number.MuiTypography-body1:nth-child(7) [data-style-id="card-view-value"] {
+        color: green;
+    }
+
+    [data-style-actor-name="CLXBrokerRecenAppCreated"] .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3>div {
+        width: 100vw !important;
+    }
+
+
+    [data-style-actor-name="CLXBrokerListOfApplications"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+    [data-style-actor-name="CLXBrokerRecenAppCreated"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+        background-color: #f8f8f8 !important;
+    }
+
+    [data-style-actor-name="CLXClientInfoContainer"].appFlexVertical,
+    [data-style-actor-name="CLXPartiesContainer"].appFlexVertical,
+    [data-style-actor-name="CLXCollateralContainer"].appFlexVertical,
+    [data-style-actor-name="CLXDocumentAndTaskContainer"].appFlexVertical {
+        margin: 0 !important;
+    }
+
+    [data-style-tag="mui"] [data-style-id="card-view"] [data-style-id="card-entry"].clickable {
+        border: 1px solid #9817b5;
+        border-radius: 4px;
+    }
+
+    [data-style-actor-name="CLXBrokerDocTasks"] .MuiTableCell-head:nth-child(5),
+    [data-style-actor-name="CLXBrokerDocTasks"] .MuiTableCell-root.MuiTableCell-body:nth-child(5),
+    [data-style-actor-name="CLXBrokerDocTasks"] .MuiTableCell-head:nth-child(4),
+    [data-style-actor-name="CLXBrokerDocTasks"] .MuiTableCell-root.MuiTableCell-body:nth-child(4) {
+        display: none;
+    }
+
+    [data-style-actor-name="CLXBrokerDocTasks"] [data-style-id="list-actions"] button {
+        position: relative;
+        left: 3em;
+    }
+
+    [data-style-actor-name="CLXBrokerDocTasks"] .MuiTableCell-body {
+        padding: 0 5px !important;
+    }
+
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+    background-color: #f8f8f8;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"] .record-content .MuiGrid-root.section.MuiGrid-container.MuiGrid-spacing-xs-3 {
+    background-color: #fff;
+}
+
+[data-style-actor-name="CLXBrokerListOfApplications"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded {
+    background-color: #f8f8f8 !important;
+}
+
+[data-style-actor-name="CLXBrokerHomeContainer"].actor-wrapper.contains-division {
+    background-color: #f8f8f8;
+}
+
+[data-style-stage-name="Home"] .MuiTableCell-body {
+    padding: 6px 10px !important;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="Priority"]:after {
+    content: "\f071";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #ff0000;
+    position: absolute;
+    right: 50px;
+    margin-top: 14px;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="Priority"] [data-style-id="card-view-value"] {
+    display: none;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="genesis__Application__r_Name"] [data-style-id="card-view-value"] {
+    font-weight: 500;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="Subject"] {
+    justify-content: left !important;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="genesis__Application__r_Name"] {
+    justify-content: left !important;
+}
+
+[data-style-actor-name="CLXBrokerTaskCreated"] [data-style-field-name="CreatedDate"] {
+    margin-top: -30px;
+    display: flow-root !important;
+}
+
+div[data-style-actor-name="notesWidget"] .MuiGrid-item {
+    padding: 0px !important;
+}
+
+div[data-style-actor-name="notesWidget"] .MuiCardContent-root {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px 10px !important;
+    border: 1px solid #efefef;
+    position: relative;
+    overflow: auto;
+
+}
+
+div[data-style-actor-name="notesWidget"] div[data-style-id="card-view-value"] {
+    font-weight: normal;
+    text-align: left !important;
+    width: 100%;
+}
+
+div[data-style-actor-name="CLXAddNotesWidget"].MuiPaper-root {
+    margin: 0px !important;
+}
+
+div[data-style-actor-name="CLXAddNotesWidget"] .toolbar-at-bottom {
+    padding: 0px !important;
+}
+
+div[data-style-actor-name="notesWidget"] .MuiGrid-container>.MuiGrid-item:nth-child(even) .MuiCardContent-root {
+    background: rgb(47 89 138 / 0.1);
+}
+
+div[data-style-field-name="CreatedBy_Name"],
+div[data-style-field-name="LastModifiedDate"] {
+    display: inline-flex !important;
+    width: 50% !important;
+    margin: 0px 0px 7px 0px !important;
+}
+
+div[data-style-field-name="CreatedBy_Name"] div[data-style-id="card-view-value"],
+div[data-style-field-name="LastModifiedDate"] div[data-style-id="card-view-value"] {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    white-space: nowrap;
+    color: #555;
+
+}
+
+div[data-style-field-name="LastModifiedDate"] div[data-style-id="card-view-value"] {
+    text-align: right !important;
+}
+
+div[data-style-actor-name="CLXAdjustWidth"],
+div[data-style-actor-name="CLXReviewPageCheckT"] {
+    display: none !important;
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] li.highlighted.Mui-selected>div:first-child {
+    padding: 6px !important;
+    background-color: #9817b5;
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] .MuiTreeView-root {
+    padding: 0.5em 1em;
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] .MuiToolbar-regular {
+    min-height: 42px;
+    background-color: #5b0e6c !important;
+    color: white !important;
+
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] h1.MuiTypography-root.title.MuiTypography-h1.MuiTypography-gutterBottom {
+    font-weight: 400 !important;
+    font-size: medium !important;
+    font-family: Roboto !important;
+    margin: 0 !important;
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] li {
+    padding: 2px !important;
+}
+
+[data-style-actor-name="CLXDocumentSubFolder"] .Mui-expanded {
+    padding: 1px;
+}
+
+[data-style-actor-name="CLXBrokerUploadDocumentPanel"] span.MuiButtonBase-root.MuiIconButton-root {
+    background-image: linear-gradient(to right, #9817b5, #5b0e6c);
+    border-radius: 4px;
+    padding: 6px 18px;
+    color: #fff;
+}
+[data-style-actor-name="CCBPGetGuaratorConDetails"] {
+    display: none !important;
+}
+[data-style-actor-name="CCBPGettingConsentData"] {
+    display: none !important;
+}
+button:disabled,
+button[disabled]{
+  background-color: #e6e6e6 !important;
+  background-image: linear-gradient(to right, #cccccc, #cccccc) !important;
+  border: 2px solid #cccccc !important;
+}
+[data-style-actor-name="CCBPLoggedInUserDetails"] {
+    display: none !important;
+}
+
+[data-style-actor-name="CCBPApplicationSummaryAtApprovedPage"] {
+    padding-left: 4px !important;
+    padding-bottom: 4px !important;
+    padding-right: 4px !important;
+}
+
+[data-style-actor-name="CCBPPartiesListAtApprovedPageDetails"] {
+    padding-left: 4px !important;
+    padding-bottom: 4px !important;
+    padding-right: 4px !important;
+}
+
+[data-style-actor-name="CCBPStipsSummaryAtApprovedPage"] {
+    padding-left: 4px !important;
+    padding-bottom: 4px !important;
+    padding-right: 4px !important;
+}
+
+[data-style-actor-name="CCBPCanPricingDetailsForCompletePage"] {
+    display: none !important;
+}

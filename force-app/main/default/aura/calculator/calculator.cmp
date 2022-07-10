@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <!-- We need to accept two numbers and do Math operations    -->
+    
+    <aura:attribute name="input1" type="Integer" Description="Stores Input 1 Value"/>
+    <aura:attribute name="input2" type="Integer" Description="Stores Input 2 Value"/>    
+    <aura:attribute name="output" type="Integer" Description="Stores Output Value"/>
+    
+        
+        <lightning:input type="number" value="{!v.input1}" label="Please Enter Number 1 " required="true"/>
+        <lightning:input type="number" value="{!v.input2}" label="Please Enter Number 2 " required="true"/>
+        
+        OutPut : {!v.output}<br/>
+        
+        <lightning:button variant="brand" label="Add" Title="Addition" onclick="{!c.doAdd}"/>
+        <lightning:button variant="brand" label="Sub" Title="Subtration" onclick="{!c.doSub}"/>
+        <lightning:button variant="brand" label="Mul" Title="Multiplication" onclick="{!c.doMul}"/>
+        <lightning:button variant="brand" label="Div" Title="Division" onclick="{!c.doDiv}"/> 
+    <lightning:button variant="base" label="Base" title="Looks like a link" onclick="{!c.doAdd}" />
+
+</aura:component>

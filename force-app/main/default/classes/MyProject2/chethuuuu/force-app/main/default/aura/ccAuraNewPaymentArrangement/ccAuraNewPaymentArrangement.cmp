@@ -1,0 +1,6 @@
+<aura:component implements="lightning:isUrlAddressable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <aura:attribute name="recordId" type="String"/>
+    <lightning:navigation aura:id="navigation"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <c:ccNewPaymentArrangement recordId="{!v.recordId}" oncloseclicked="{!c.handleCloseClick}"></c:ccNewPaymentArrangement>
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component implements="lightning:isUrlAddressable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <c:accountContactRelation applicationId="{!v.pageReference.state.c__appId}" accountId="{!v.pageReference.state.c__accountId}">
+    </c:accountContactRelation>
+</aura:component>

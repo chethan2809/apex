@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="Narrow"  title="Lightning Card" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <template if:true={contacts.data}>
+                <template for:each={contacts} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template if:true={error}>
+                {error}
+            </template>
+        </div>
+    </lightning-card>
+</template>

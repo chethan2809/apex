@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title={filesTitle}>
+        <div class="slds-grid slds-gutter slds-p-left_small slds-p-right_small slds-p-bottom_small">
+            <lightning-file-upload
+                name="fileUploader"
+                record-id={recordId}
+                onuploadfinished={handleUploadFinished}
+                multiple>
+            </lightning-file-upload>
+            <div class="slds-col slds-p-left_small slds-align_absolute-center slds-size_2-of-6">
+                <lightning-combobox data-name="docCategory" name="docCategory"
+                    options={docCategoryList} placeholder="Document Category" label="Document Category"
+                    value={defaultSelectedValue} onchange={handleDocumentCategoryChange}>
+                </lightning-combobox>
+            </div>
+        </div>
+    </lightning-card>
+    <div if:true={isLoaded} class="slds-is-relative">
+        <lightning-spinner
+            alternative-text="Loading..." variant="brand">
+        </lightning-spinner>
+    </div>
+
+    <div class="slds-p-around_small">
+        <div class="slds-box design">
+            <template if:true={resultFileList} class="payments-data-table">
+                <div style="height:200px">
+                    <lightning-datatable data={resultFileList} columns={columns} key-field="Id"
+                        hide-checkbox-column="true" show-row-number-column="false"
+                        sorted-by={sortBy} sorted-direction={sortDirection} onsort={doSorting}>
+                    </lightning-datatable>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

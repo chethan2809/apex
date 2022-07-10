@@ -1,0 +1,91 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false"
+           docType="html-5.0" controller="clcommon.PortalActions">
+    <apex:include pageName="clcommon__ResolveNamespace"/>
+    <html>
+        <head>
+             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+             <meta charset="UTF-8" />
+            <title>CLX Broker Portal</title>
+         <apex:include pageName="CLXBrokerCustomScript"/>
+             <apex:stylesheet value="{!URLFOR($Resource.CLXBrokerPortalStyle)}"/>
+            <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK6npp4m0Xoa5na1QSAr4X2Y5fGlzxirI&libraries=places"></script> -->
+             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXB8MS1fMMXwu99qZAmuB5MU0_mTtfpWI&libraries=places"></script>
+             <style>
+               [data-style-actor-name="CLXBrokerAppDetailsHidden"] {
+                    margin: 0px !important;
+                }
+                [data-style-actor-name="CLXBrokerGettingStarted"] .MuiGrid-root.section.MuiGrid-container.MuiGrid-spacing-xs-3 {
+                    padding: 0 !important;
+                }
+                [data-style-actor-name="CLXBrokerNotificationSetting"] {
+                    margin: 0px !important;
+                }
+                [data-style-actor-name="CLXBrokerNotificationSetting"] .MuiGrid-root.section.MuiGrid-container.MuiGrid-spacing-xs-3 {
+                    padding: 0 !important;
+                }
+             </style>
+        </head>
+        <body>
+            <clcommon:IncludePortal2 navName="clx_broker_portal" theme="mui" showDefaultLoadingPage="false">
+            </clcommon:IncludePortal2>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                (portalext => {
+                
+                  portalext.adjustWidth= (isReviewPage) => {
+                     
+                    if(!isReviewPage && $('div[data-style-actor-name="CLXProgressWidget"]').hasClass('hidden-actor'))
+                    {
+                        $('div[data-style-actor-name="CLXAppSummaryWidget"].actor-wrapper').hide();
+                        $('div[data-style-actor-name="CLXBrokerLoanDetailsPreFetched"].actor-wrapper').css('width','100%');
+                        $('div[data-style-actor-name="CLXClientInfoContainer"].actor-wrapper').css('width','100%');
+                        $('div[data-style-actor-name="CLXPartiesContainer"].actor-wrapper').css('width','100%');
+                        $('div[data-style-actor-name="CLXCollateralContainer"].actor-wrapper').css('width','100%');
+                        $('div[data-style-actor-name="CLXDocumentAndTaskContainer"].actor-wrapper').css('width','100%');
+                        $('div[data-style-actor-name="CLXReviewContainer"].actor-wrapper').css('width','100%');
+                    }
+                    else{
+                        $('div[data-style-actor-name="CLXAppSummaryWidget"].actor-wrapper').show();
+                        $('div[data-style-actor-name="CLXBrokerLoanDetailsPreFetched"].actor-wrapper').css('width','75%');
+                        $('div[data-style-actor-name="CLXClientInfoContainer"].actor-wrapper').css('width','75%');
+                        $('div[data-style-actor-name="CLXPartiesContainer"].actor-wrapper').css('width','75%');
+                        $('div[data-style-actor-name="CLXCollateralContainer"].actor-wrapper').css('width','75%');
+                        $('div[data-style-actor-name="CLXDocumentAndTaskContainer"].actor-wrapper').css('width','75%');
+                        $('div[data-style-actor-name="CLXReviewContainer"].actor-wrapper').css('width','75%');
+                        
+                      
+
+                    }
+                    
+                    
+                    
+                    
+                  };    
+                  
+                         portalext.adjustWidths= (val) => {
+                  
+                
+                    
+                    if($('div[data-style-actor-name="CLXBrokerTaskCreated"]').hasClass('hidden-actor'))
+                    {
+                        $('div[data-style-actor-name="CLXBrokerRecentTaskedActivities"].actor-wrapper').hide();
+                        $('div[data-style-actor-name="CLXBrokerRecentActivities"].actor-wrapper').css('width','100%');
+                    }
+                    else{
+                      $('div[data-style-actor-name="CLXBrokerRecentTaskedActivities"].actor-wrapper').show();
+                        $('div[data-style-actor-name="CLXBrokerRecentActivities"].actor-wrapper').css('width','75%');
+                        
+                      
+
+                    }
+                    
+                    
+                    
+                  };     
+             
+                })((window.portalext = window.portalext || {}));
+            </script>
+  
+        </body>
+    </html>
+</apex:page>

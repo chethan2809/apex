@@ -1,0 +1,20 @@
+<apex:page StandardController="Opportunity" extensions="OpportunityControllerExtension" showheader="true" sidebar="true" showQuickActionVfHeader="false" lightningStylesheets="true">
+     <script type="text/javascript">
+	      window.close();
+     </script>
+    <apex:form >
+      <apex:pageBlock title="Consent to Pull Credit Report" id="applications_List">
+         <apex:pageMessages escape="false"/>
+         <apex:pageBlockTable value="{! Applications}" var="app" >
+            <apex:column value="{! app.Name}"/>
+             		<apex:column headerValue="Credit Check Consent">
+             			<apex:inputCheckbox value="{! app.Credit_Check_Consent__c}" title="Credit"/>
+                 	</apex:column>
+         </apex:pageBlockTable>
+          <apex:pageBlockButtons location="bottom" >
+             <apex:commandButton id="savebutton" action="{!saveApplication}" value="Save" />
+             <apex:commandButton action="{!cancel}" value="Close" immediate="true"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>

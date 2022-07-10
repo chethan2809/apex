@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Private</cacheControl>
+    <contentType>application/json</contentType>
+    <description>CLOUD-2993 - REQ_CLS_39/122 - Credit Policy Change - Allowing Customized Buy Rates for Partner</description>
+</StaticResource>

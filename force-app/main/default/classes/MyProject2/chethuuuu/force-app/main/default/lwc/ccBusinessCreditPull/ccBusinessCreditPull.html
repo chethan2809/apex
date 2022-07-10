@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Experian Business Credit">
+        <lightning-card variant="narrow">
+            <div class="slds-grid slds-gutter slds-p-left_small slds-p-right_small slds-p-bottom_small">
+                <div class="slds-col slds-p-left_small slds-align_absolute-left slds-size_2-of-12">
+                    <lightning-button variant="brand" name="Run Business Credit" label="Run Business Credit"
+                            onclick={createBusinessCreditPull} disabled={disableSaveButton}>
+                    </lightning-button>
+                </div>
+            </div>
+            <div if:true={isLoaded} class="slds-is-relative">
+                <lightning-spinner
+                    alternative-text="Loading..." variant="brand">
+                </lightning-spinner>
+            </div>
+            <div class="slds-p-around_small">
+                <div class="slds-box design">
+                    <template if:true={businessCreditReport} class="payments-data-table">
+                        <div style="height:200px">
+                            <lightning-datatable data={businessCreditReport} columns={columns} key-field="Id"
+                                show-row-number-column="false" hide-checkbox-column="true">
+                            </lightning-datatable>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </lightning-card>
+</template>

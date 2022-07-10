@@ -1,0 +1,35 @@
+public class CLSBPPortalConstants {
+	public static String UNAUTHORIZED_ACTION = 'UNAUTHORIZED_ACTION';
+    public static String LOAN_INFO = 'loanInfo';
+    public static String SOMETHING_WENT_WRONG = 'Something went wrong.';
+    public static String APPLICATION_ID = 'applicationId';
+    public static String BI_BASIC_INFO = 'BusinessInfoBesicDetails';
+    public static String BI_BINNING_ADDRESS = 'BusinessInfoBillingAdd';
+    public static String BI_MAILING_ADDRESS = 'BusinessInfoMaillingAdd';
+    public static String BI_ESTD_DETAILS = 'BusinessInfoEstdDetails';
+    public static String APP_ID_IS_NULL = 'Application Id is null';
+    public static String PARTY_TYPE = 'partyType';
+    public static String CLIENT_TYPE = 'clientType';
+    public static String BUSINESS = 'Business';
+    public static String INDIVIDUAL = 'Individual';
+    public static String COBORROWER_ACCOUNT_ID = 'coborrowerAccountId';
+    public static String COBORROWER_CONTACT_ID = 'coborrowerContactId';
+    public static String IND_ACC_DETAILS = 'individualAccountDetails';
+    public static String COLLATERAL_TYPES = 'collateralTypes';
+    public static String ADD_OWNER = 'addOwner';
+    public static String ADD_COLLATERALS = 'addCollaterals';
+    public static String PARTY_LABLE = 'partyLable';
+    public static String ASSET = 'Asset';
+    public static String LIABILITY = 'Liability';
+    public static String INCOME = 'Income';
+    public static String EXPENSE = 'Expense';
+    public static String SELECTED_STATUS = 'selectedStatus';
+    public static String COMPLETED = 'Completed';
+    public static String OUTSTANDING = 'OutStanding';
+    public static String SUBMITTED = 'Submitted';
+    public static String ALL = 'All';
+    public static String SEARCH_DETAILS = 'searchDetails';
+    public static String REVIEW_COMMENT = 'reviewComment';
+    public static String TASK_ID = 'taskId';
+    public static String RECENT = 'recent';
+}

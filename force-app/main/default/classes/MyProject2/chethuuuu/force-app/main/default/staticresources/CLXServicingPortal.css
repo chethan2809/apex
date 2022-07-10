@@ -1,0 +1,1049 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+body,
+body [data-style-id="app"] {
+  font-family: Roboto !important;
+}
+[navigate] {
+  cursor: pointer;
+}
+[data-style-actor-name="ClsAppLayoutOneHeader"][data-style-id="division"],
+[data-style-actor-name="ClsAppLayoutOneMain"].actor-wrapper {
+  max-width: 984px !important;
+  margin: auto !important;
+}
+[data-style-actor-name="HeaderContent2"] .menu-action,
+[data-style-actor-name="HeaderContent"] .menu-action,
+[data-style-actor-name="HeaderContentMobile"] .menu-action {
+  position: absolute;
+  right: 0 !important;
+}
+[data-style-actor-name="HeaderContent2"] .menu-action button,
+[data-style-actor-name="HeaderContent"] .menu-action button,
+[data-style-actor-name="HeaderContentMobile"] .menu-action button {
+  box-shadow: none;
+  font-size: 1.6rem;
+}
+[data-style-actor-name="HeaderContent2"],
+[data-style-actor-name="HeaderContentMobile"] {
+  display: none;
+}
+[data-style-actor-name="CLXContractDetails"] [data-style-action-name="Print"].MuiButtonBase-root{
+  background: transparent;
+    color: #5b0e6c;
+}
+[data-style-actor-name="CLXContractDetails"] [data-style-action-name="Print"].MuiButtonBase-root .MuiButton-label {
+  width: 5rem;
+}
+[data-style-actor-name="CLXContractDetails"] [data-style-action-name="Print"].MuiButtonBase-root .MuiButton-label i{
+  font-size: 25px;
+}
+@media (max-width: 600px) {
+  [data-style-actor-name="HeaderContent"] {
+    display: none !important;
+  }
+  [data-style-actor-name="HeaderContent2"],
+  [data-style-actor-name="HeaderContentMobile"] {
+    display: block !important;
+  }
+  [data-style-actor-name="HeaderContent2"] button span,
+  [data-style-actor-name="HeaderContentMobile"] button span {
+    color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1140px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 47.5% !important;
+  }
+}
+@media (min-width: 321px) and (max-width: 575.98px) {
+  html {
+    font-size: 43.5% !important;
+  }
+}
+@media (max-width: 320.98px) {
+  html {
+    font-size: 25.5% !important;
+  }
+}
+[data-style-actor-name="ClsAppLayoutOneHeader"] {
+  overflow: hidden !important;
+  z-index: 1;
+}
+[data-style-actor-name="HeaderContent2"] img,
+[data-style-actor-name="HeaderContent"] img,
+[data-style-actor-name="HeaderContentMobile"] img {
+}
+@media (max-width: 600px) {
+  [data-style-actor-name="HeaderContent2"] img,
+  [data-style-actor-name="HeaderContent"] img,
+  [data-style-actor-name="HeaderContentMobile"] img {
+    top: calc(44px - 5rem) !important;
+  }
+}
+[data-style-actor-name="HeaderContent2"] button,
+[data-style-actor-name="HeaderContent"] button,
+[data-style-actor-name="HeaderContentMobile"] button {
+  box-shadow: none;
+  padding: 0 !important;
+  background-color: #5b0e6c !important;
+}
+.title {
+
+  font-weight: 400 !important;
+  margin-top: 3rem !important;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CLXContractDetails"]
+  [data-style-id="list-view"]
+  .toolbar-at-top {
+  padding: 0 !important;
+}
+[data-style-actor-name="CLXBankInfoContainer"] button {
+  background-color: #fff !important;
+}
+[data-style-actor-name="CLXBankInfoContainer"] button span i {
+  font-size: 2.4rem !important;
+}
+[data-style-actor-name="CLXLoanList"] .MuiGrid-spacing-xs-3 {
+  padding: 12px;
+}
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"] {
+  min-height: 340px;
+  position:relative;
+}
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-content"] {
+  padding-top: 0 !important;
+}
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value-entry"]:first-child {
+  border-bottom: 1px solid #5b0e6c;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value-entry"]:first-child
+  [data-style-id="card-view-value"] {
+  text-align: center !important;
+  font-size: 2.6rem;
+  width: 100%;
+}
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="card-view-value"],
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  [data-style-id="field-label"] {
+  
+}
+/* [data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root {
+
+      padding: 2rem 1rem;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+} */
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root
+  button {
+    width: calc(100% - 30px);
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    height: 4.6rem;
+    background: #5b0e6c;
+    color: #fff !important;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"],
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"]:hover{
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    bottom: unset;
+    left: unset;
+}
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"] .MuiCardActions-root button[data-style-action-name="EditLoanName"] i{
+  color: #5b0e6c;
+}
+[data-style-actor-name="CLXLoanList"]
+  [data-style-id="card-entry"]
+  .MuiCardActions-root
+  button:hover {
+  background: #014280;
+}
+div:focus {
+  outline: none !important;
+}
+[data-style-id="field"] .MuiInput-underline:after {
+  border-bottom: 2px solid #5b0e6c !important;
+  color: #a33038 !important;
+}
+[data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 771px) {
+  [data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper
+    [data-style-id="base-panel"]
+    > div {
+    display: inline !important;
+  }
+}
+[data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div
+  [data-style-id="text-before"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+[data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  > div
+  [data-style-id="text-before"]
+  span.fa {
+  display: block;
+  text-align: center;
+  font-size: 8rem;
+}
+[data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper
+  [data-style-id="base-panel"]
+  .MuiToolbar-regular {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+[data-style-actor-name="MyProfileContainer"].actor-wrapper
+  [data-style-actor-name="MyProfileContainer"] {
+ 
+}
+@media (max-width: 771px) {
+  [data-style-actor-name="MyProfileContainer"].actor-wrapper
+    [data-style-actor-name="MyProfileContainer"] {
+    display: inline !important;
+  }
+}
+[data-style-actor-name="MyProfileContainer"].actor-wrapper
+  [data-style-actor-name="MyProfileContainer"]
+  [data-style-actor-name="CLXUserGreetingPanel"]
+  [data-style-id="text-before"]
+  span.fa {
+  font-size: 9rem;
+  display: block;
+  text-align: center;
+}
+[data-style-actor-name="MyProfileContainer"].actor-wrapper
+  [data-style-actor-name="MyProfileContainer"]
+  [data-style-actor-name="CLXUserGreetingPanel"]
+  [data-style-id="text-before"]
+  span.text {
+  text-align: center;
+  display: block;
+}
+[data-style-actor-name="SideBarNavigationButtons"] {
+  box-shadow: none !important;
+}
+[data-style-actor-name="ClsAppLayoutOneHeader"].actor-wrapper {
+  border-bottom: 1px solid #e1e1e1 !important;
+  box-shadow: 1px 1px 5px 0 #e1e1e1 !important;
+}
+[data-style-actor-name="HeaderContent"] .MuiToolbar-root {
+  height: 100% !important;
+  min-height: 48px;
+}
+[data-style-actor-name="ClsAppLayoutOneMain"].actor-wrapper {
+  top: 93px !important;
+}
+[data-style-actor-name="DashboardChartBarContainer"].actor-wrapper
+  [data-style-actor-name="DashboardChartBarContainer"] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 771px) {
+  [data-style-actor-name="DashboardChartBarContainer"].actor-wrapper
+    [data-style-actor-name="DashboardChartBarContainer"] {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+.MuiTab-root {
+  background-color: #f1f1f1 !important;
+  /*
+  border-left: 1px solid #e1e1e1 !important;
+  border-right: 1px solid #e1e1e1 !important;
+  */
+}
+.MuiTab-root.Mui-selected {
+  background-color: #5b0e6c !important;
+  color: #fff !important;
+}
+[data-style-actor-name="CLXContractDetails"] svg {
+  font-size: 3rem;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CLXContractDetails"] .MuiTabs-root.tab-bar {
+  margin: 0 12px !important;
+    background: #f1f1f1;
+}
+[data-style-actor-name="CLXContractDetails"] > .MuiToolbar-root {
+  display: none !important;
+}
+[data-style-actor-name="CLXContractDetails"] > .MuiToolbar-root .menu-action {
+  width: 100%;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  [data-style-actor-name="CLXContractDetails"] .MuiTabs-root {
+    display: none !important;
+  }
+  [data-style-actor-name="CLXContractDetails"] > .MuiToolbar-root {
+    display: block !important;
+  }
+  [data-style-actor-name="CLXContractDetails"]
+    [data-style-id="tab-step-container"] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+.MuiPopover-root#hamburger .MuiMenu-paper {
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  height: 100% !important;
+  background: #fff !important;
+  left: 0 !important;
+  top: 88px !important;
+}
+.MuiPopover-root#hamburger .MuiMenu-paper li {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0 10px !important;
+}
+.MuiPopover-root#hamburger .MuiMenu-paper span {
+  width: 100%;
+  font-weight: 300;
+  color: #5b0e6c;
+  text-align: center;
+}
+.MuiPopover-root#hamburger .MuiMenu-paper span b {
+  font-weight: 600;
+}
+[data-style-actor-name="CLXUserInformation"] .MuiTabs-scroller button {
+  width: 50% !important;
+  max-width: none;
+  border: 0px !important;
+}
+[data-style-id="pagination"] button {
+  border: 1px solid #e1e1e1;
+  width: 5rem;
+  border-radius: 0;
+  background-color: #f1f1f1;
+}
+[data-style-id="pagination"] button.highlight {
+  background-color: #5b0e6c;
+}
+[data-style-id="pagination"] button.highlight span {
+  color: #fff !important;
+}
+.MuiTableRow-head th {
+  font-size: 14px !important;
+  padding: 10px !important;
+      line-height: normal;
+}
+.MuiTableRow-head th [data-style-id="list-view-value"] {
+  font-size: 1.5rem;
+}
+.MuiTableBody-root tr:nth-child(odd) {
+  background: #f1f1f1;
+}
+.MuiTableBody-root tr:nth-child(2n) {
+  background: #f9f9f9;
+}
+div[data-style-id="modal-background"] {
+  background-color: rgba(34, 34, 34, 0.36);
+  animation-name: popupAnimation;
+  animation-duration: 1s;
+}
+[data-style-id="modal-close-icon"] {
+  display: none;
+}
+[data-style-actor-name="ChangePasswordSuccessPopup"] {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  height: 30rem !important;
+  width: 40rem !important;
+  background: #fff;
+  padding: 2rem 3rem;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  border-radius: 1rem;
+  margin-top: 8rem;
+}
+[data-style-actor-name="ChangePasswordSuccessPopup"]
+  [data-style-id="text-before"]
+  span.fa {
+  display: block;
+  text-align: center;
+  font-size: 8rem;
+  color: green;
+}
+[data-style-actor-name="ChangePasswordSuccessPopup"]
+  [data-style-id="text-before"]
+  .text {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+}
+[data-style-actor-name="ChangePasswordSuccessPopup"] .MuiToolbar-regular {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  top: 4rem;
+}
+[data-style-actor-name="makePaymentDetails"] .MuiPaper-elevation2 {
+  box-shadow: 0 0 !important;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .text-before {
+  height: 275px;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .pp {
+  position: absolute;
+  left: 50%;
+  transform: TRANSLATEX(-50%);
+  margin-top: 50px;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .pp img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .text {
+  font-size: 2.6rem !important;
+}
+[data-style-actor-name="CLXUserGreetingPanel"]
+  [data-style-id="card-view-value"],
+[data-style-actor-name="CLXUserInfoDetails"] [data-style-id="card-view-value"] {
+  font-size: 1.6rem !important;
+  color: #000 !important;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .MuiFormLabel-root,
+[data-style-actor-name="CLXUserInfoDetails"] .MuiFormLabel-root {
+  font-size: 1.6rem !important;
+}
+[data-style-actor-name="CLXUserGreetingPanel"] .MuiPaper-elevation1,
+[data-style-actor-name="CLXUserInfoDetails"] .MuiPaper-elevation1 {
+  box-shadow: 0 0 !important;
+  border: none !important;
+}
+[data-style-actor-name="CLXContractDetails"]
+  .MuiGrid-grid-sm-12
+  .MuiPaper-root {
+  box-shadow: none !important;
+}
+[data-style-actor-name="CLXContractDetails"]
+  .MuiGrid-grid-sm-12
+  .MuiPaper-root
+  .MuiFormLabel-root {
+ 
+}
+[data-style-actor-name="CLXContractDetails"]
+  .MuiGrid-grid-sm-12
+  .MuiPaper-root
+  [data-style-id="card-view-value"] {
+  color: #000 !important;
+  
+}
+[data-style-actor-name="CLXBillsDetails"][data-style-id="list-view"],
+[data-style-actor-name="CLXDocumentDetails"][data-style-id="list-view"],
+[data-style-actor-name="CLXPaymentScheduleDetails"][data-style-id="list-view"],
+[data-style-actor-name="CLXTransactionDetails"][data-style-id="list-view"] {
+  padding: 2rem;
+}
+[data-style-actor-name="CLXDashboardOverview"] .MuiPaper-elevation0 {
+  background-color: #fff !important;
+  border-color: transparent;
+  padding: 2rem;
+  border-radius: 4px !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+[data-style-actor-name="CLXDashboardOverview"] .amounts {
+  width: 100%;
+  text-align: center;
+  display: block !important;
+}
+[data-style-actor-name="CLXDashboardOverview"] .amounts .values {
+  display: inline-block !important;
+  width: 30rem !important;
+  padding-right: 4rem;
+}
+[data-style-actor-name="CLXDashboardOverview"] .amounts .values .labelval {
+  font-size: 2rem !important;
+}
+[data-style-actor-name="CLXDashboardOverview"] .amounts .values .amt {
+  font-size: 3rem !important;
+  color: #5b0e6c;
+}
+[data-style-actor-name="CLXBankInfoPanel"]
+  [data-style-id="card-view-value-entry"]
+  .MuiFormLabel-root {
+  font-size: 1.6rem !important;
+}
+[data-style-actor-name="CLXBankInfoPanel"]
+  [data-style-id="card-view-value-entry"]
+  [data-style-id="card-view-value"] {
+  font-size: 1.6rem !important;
+  color: #000 !important;
+}
+[data-style-actor-name="CLXContractDetails"] .MuiButtonBase-root {
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+[data-style-actor-name="CLXContractDetails"]
+  .MuiButtonBase-root
+  .MuiButton-label {
+  font-size: 1.6rem;
+  height: 4rem;
+  line-height: 4rem;
+  width: 15rem;
+  text-transform: capitalize;
+}
+[data-style-actor-name="CLXFilters"] .MuiToolbar-root:last-child {
+  min-height: 0 !important;
+  top: -2rem;
+}
+[data-style-actor-name="CLXFilters"] [data-style-section-name="DateRange"] {
+  margin-bottom: 2rem !important;
+}
+[data-style-actor-name="Footer"].actor-wrapper {
+  position: absolute;
+  top: 100%;
+  background-color: #002147;
+  width: 100%;
+}
+[data-style-actor-name="Footer"].actor-wrapper .label {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  color: grey !important;
+}
+[data-style-actor-name="Footer"].actor-wrapper .value {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 200;
+  color: #f1f1f1;
+}
+[data-style-actor-name="Footer"].actor-wrapper .fa {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+[data-style-actor-name="Footer"].actor-wrapper .col-md-3,
+[data-style-actor-name="Footer"].actor-wrapper .col-md-6 {
+  margin-bottom: 2rem;
+}
+[data-style-actor-name="Footer"].actor-wrapper .row {
+  margin: 2rem 0 3rem;
+}
+[data-style-actor-name="Footer"].actor-wrapper .links {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+[data-style-actor-name="Footer"].actor-wrapper .center {
+  text-align: center;
+}
+div[data-style-actor-name="CLXProfileContainer"].appFlexVertical,
+div[data-style-actor-name="MyProfileContainer"].appFlexVertical {
+  margin: calc(6px) 0px !important;
+  width: 100% !important;
+}
+div[data-style-actor-name="CLXUserInformation"] div.MuiTabs-root.tab-bar {
+  margin: 0px calc(6px);
+}
+div[data-style-actor-name="CLXUserInformation"] .MuiTabScrollButton-root {
+  display: none !important;
+}
+div[data-style-actor-name="CLXChangePasswordPanel"].actor-wrapper.contains-component {
+  margin-top: 6px !important;
+}
+div[data-style-actor-name="CLXProfileContainer"].actor-wrapper.contains-division {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  margin: calc(6px) !important;
+  background-color: rgb(255, 255, 255);
+  border-color: transparent;
+  border-radius: 4px;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root,
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root,
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root,
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root,
+div[data-style-actor-name="CLXUserEmail"].MuiPaper-root,
+div[data-style-actor-name="CLXUserFirstName"].MuiPaper-root,
+div[data-style-actor-name="CLXUserLastName"].MuiPaper-root {
+  box-shadow: none !important;
+  margin: 0px !important;
+}
+div[data-style-actor-name="CLXBusinessPhone"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXBusinessAddress"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXUserAddress"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXUserPhone"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXUserEmail"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXUserLastName"] .MuiPaper-elevation1,
+div[data-style-actor-name="CLXUserFirstName"] .MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CLXBusinessPhone"] .MuiCardContent-root,
+div[data-style-actor-name="CLXBusinessAddress"] .MuiCardContent-root,
+div[data-style-actor-name="CLXUserAddress"] .MuiCardContent-root,
+div[data-style-actor-name="CLXUserPhone"] .MuiCardContent-root,
+div[data-style-actor-name="CLXUserEmail"] .MuiCardContent-root,
+div[data-style-actor-name="CLXUserLastName"] .MuiCardContent-root,
+div[data-style-actor-name="CLXUserFirstName"] .MuiCardContent-root {
+  padding: 0px 10px 0px 10px !important;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXUserFirstName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXUserEmail"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded,
+div[data-style-actor-name="CLXUserLastName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded
+ {
+  display: flex;
+  align-items: center;
+}
+
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXUserFirstName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXUserEmail"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child,
+div[data-style-actor-name="CLXUserLastName"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div:first-child
+{
+  flex-basis: calc(100% - 64px);
+}
+
+div[data-style-field-name="LastName"],
+div[data-style-field-name="Email"],
+div[data-style-field-name="MobilePhone"]
+{
+  padding: 0px !important;
+}
+
+div[data-style-field-name="LastName"] .MuiFormControl-root,
+div[data-style-field-name="Email"] .MuiFormControl-root,
+div[data-style-field-name="MobilePhone"] .MuiFormControl-root
+{
+  margin: 5px 0px 0px 0px;
+}
+
+div[data-style-actor-name="CLXBusinessPhone"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXUserAddress"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXBusinessAddress"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXUserPhone"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXUserEmail"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXUserLastName"] .toolbar-at-bottom button,
+div[data-style-actor-name="CLXUserFirstName"] .toolbar-at-bottom button {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+div[data-style-actor-name="CLXBusinessPhone"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXUserAddress"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXBusinessAddress"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXUserPhone"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXUserEmail"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXUserLastName"] .toolbar-at-bottom button i,
+div[data-style-actor-name="CLXUserFirstName"] .toolbar-at-bottom button i {
+  font-size: 22px !important;
+}
+div[data-style-actor-name="CLXBusinessPhone"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXBusinessAddress"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXUserAddress"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXUserPhone"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXUserEmail"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXUserLastName"] .toolbar-at-bottom,
+div[data-style-actor-name="CLXUserFirstName"] .toolbar-at-bottom {
+  padding: 0px !important;
+}
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child{
+  display: flex;
+  align-items: center;
+}
+
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(2){
+  flex-basis: 0px;
+}
+
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(1) {
+  padding-top: 0px;
+}
+
+div[data-style-actor-name="CLXUserAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CLXBusinessPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CLXBusinessAddress"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+div[data-style-actor-name="CLXUserPhone"].MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded >div:first-child >div:nth-child(3) {
+  padding: 0px;
+}
+
+div[data-style-actor-name="Address"].appFlexVertical{
+  margin: 0px !important;
+  width:100% !important;
+  height:100% !important;
+}
+div[data-style-actor-name="CLXBusinessAddress"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CLXBusinessPhone"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="CLXUserPhone"] .MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="userAddressEdit"][data-style-id="card-view"].MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="userAddressEdit"][data-style-id="card-view"].MuiPaper-elevation2 > div > div[data-style-id="grid-container"] > .MuiGrid-grid-sm-12{
+  padding: 0px !important;
+}
+div[data-style-actor-name="userAddressEdit"] .MuiCardContent-root{
+  padding: 0px !important;
+}
+div[data-style-actor-name="BusinessAddressEdit"][data-style-id="card-view"].MuiPaper-elevation2{
+  box-shadow: none !important;
+}
+div[data-style-actor-name="BusinessAddressEdit"][data-style-id="card-view"].MuiPaper-elevation2 > div > div[data-style-id="grid-container"] > .MuiGrid-grid-sm-12{
+  padding: 0px !important;
+}
+div[data-style-actor-name="BusinessAddressEdit"] .MuiCardContent-root{
+  padding: 0px !important;
+}
+
+div[data-style-field-name="clcommon__Current_Street__c"],
+div[data-style-field-name="clcommon__Current_City__c"],
+div[data-style-field-name="clcommon__Current_State__c"],
+div[data-style-field-name="clcommon__Current_Zip_Code__c"]{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+div[data-style-overlay-name="BusinessAddress"] [data-style-id="modal-dialog"].large{
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-50%);
+  width: calc(100% - 40px);
+  min-height: 390px;
+  max-width: 505px;
+}
+div[data-style-overlay-name="Address"] [data-style-id="modal-dialog"].large{
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-50%);
+  width: calc(100% - 40px);
+  min-height: 390px;
+  max-width: 505px;
+}
+div[data-style-overlay-name="Address"] .MuiPaper-elevation1{
+  box-shadow: none !important;
+}
+[data-style-tag="mui"][data-style-id="modal-dialog"][data-client="desktop"] .dialog-header{
+	display:none;
+}
+div[data-style-actor-name="makePaymentOverlay"].actor-wrapper{
+	top:0px !important;
+	    position: relative !important;
+}
+div[data-style-actor-name="makePaymentOverlay"] h1{
+	margin:0px !important;
+}
+div[data-style-actor-name="makePaymentOverlay"] .MuiGrid-spacing-xs-3 > .MuiGrid-item{
+	padding:0px 12px !important;
+}
+div[data-style-section-name="Please select your payment type:"] h3{
+	margin-bottom:10px !important;
+}
+[data-style-tag="mui"][data-style-id="modal-dialog"][data-client="desktop"]{
+	position:relative !important;
+}
+
+.contactUs {
+  padding: 15px;
+}
+.contactUs h1 {
+  margin: 0px 0px 15px 0px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contactUs p {
+  font-size: 16px;
+  margin: 0px 0px 15px 0px;
+  clear: both;
+  overflow: auto;
+}
+.contactUs p > span:first-child {
+  float: left;
+}
+.contactUs p > span:nth-child(2) {
+  float: right;
+}
+div[data-style-actor-name="redrawPaymentOverlay"].actor-wrapper{
+	position:relative !important;
+	    top: 0px !important;
+		padding-bottom: 20px;
+}
+
+.loanRedraw p {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+  text-align: right;
+  min-height: 35px;
+  font-size: 16px;
+}
+.loanRedraw p span {
+  float: left;
+}
+div[data-style-actor-name="redrawPaymentDetails"],
+div[data-style-actor-name="redrawPaymentOTP"]
+{
+	box-shadow: none !important;
+}
+div[data-style-actor-name="redrawPaymentDetails"] h1{
+	margin: 10px 0px !important;
+}
+div[data-style-section-name="RedrawAmount"],
+div[data-style-field-name="OTP"],
+div[data-style-field-name="RedrawAmount"]
+{
+	padding-top: 0 !important; 
+    padding-bottom: 0 !important;
+}
+
+p.msg {
+    display: none;
+}
+div[data-style-actor-name="redrawPaymentOTP"] .MuiToolbar-regular,
+div[data-style-actor-name="redrawPaymentDetails"] .MuiToolbar-regular
+{
+	min-height:1px !important;
+}
+
+div[data-style-field-name="loan__Delinquent_Amount__c"] * {
+    color: #f2c51c !important;
+}
+.MuiPopover-root#hamburger .MuiMenu-paper span{
+	font-weight:600 !important;
+}
+@media (max-width: 959px)
+{
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"]{
+	    min-height: unset;
+}
+[data-style-actor-name="CLXLoanList"] [data-style-id="card-entry"] .MuiCardActions-root{
+	position:static;
+}
+}
+
+div[data-style-actor-name="CLXDocuSignOverlayContainer"].actor-wrapper,
+div[data-style-actor-name="Address"].actor-wrapper
+{
+	position:static !important;
+}
+div[data-style-actor-name="CLXDocuSignInfo"] {
+    box-shadow: none !important;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-action-name="Unchecked"],
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-action-name="Checked"]
+{
+background: none;
+    color: #5b0e6c;
+    position: absolute;
+    left: -65px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-action-name="Unchecked"] span,
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-action-name="Checked"] span
+{
+       font-size: 22px !important;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-id="field-label"] {
+    display: none;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-id="card-entry"] {
+    display: flex;
+    align-items: center;
+	    position: relative;
+		flex-wrap: wrap;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-id="card-entry"] > div {
+   flex-basis: 100%;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-id="card-view-value"] {
+    padding-left: 40px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-id="card-entry"] > div[data-style-id="card-actions"] {
+    justify-content: flex-end;
+}
+div[data-style-actor-name="DocumentPreviewContainer"].actor-wrapper{
+	
+	    position: relative !important;
+    top: 0 !important;
+}
+
+div[data-style-actor-name="CLXDocumentDetails"] button {
+    background: none !important;
+    color: #333;
+   
+}
+div[data-style-actor-name="CLXDocumentDetails"] button span {
+    width: auto !important;
+    font-size: 24px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] .upload-action .MuiButtonBase-root {
+    background: none;
+    color: #333;
+   
+}
+
+div[data-style-actor-name="CLXDocumentDetails"] .upload-action .MuiButtonBase-root span {
+    width: auto;
+    font-size: 24px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] div[data-style-id="queue-actions"] {
+    position: unset !important;
+}
+div[data-style-actor-name="CLXDocumentDetails"] button[aria-label="Checked"],
+div[data-style-actor-name="CLXDocumentDetails"] button[aria-label="Unchecked"]
+ {
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] div[data-style-id="queue-entry-content"] {
+    margin-left: 50px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] .upload-action {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] button[aria-label="View Document"] {
+    position: absolute;
+    top: 12px;
+    right: 69px;
+}
+div[data-style-overlay-name="DocumentPreviewContainer"] div[data-style-id="modal-dialog"] {
+    max-width: 500px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	    height: 250px;
+}
+div[data-style-actor-name="ssp_DocumentUploadAPIPanel"].MuiPaper-elevation2 {
+    margin: 0px !important;
+    box-shadow: none;
+}
+div[data-style-actor-name="DocumentPreviewContainer"].appFlexVertical {
+    height: auto !important;
+}
+div[data-style-actor-name="ssp_DocumentUploadAPIPanel"] .MuiListItem-root.MuiListItem-gutters.MuiListItem-secondaryAction {
+    padding-left:20px;
+}
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-field-name="clcommon__Category_Name__c"] ,
+div[data-style-actor-name="CLXDocumentDetails"] [data-style-field-name="clcommon__Description__c"] 
+{
+    margin: 0px !important;
+}
+div[data-style-actor-name="CLXDocumentDetails"] .MuiCardContent-root {
+    padding: 11px 0px 0px 10px !important;
+}
+div[data-style-actor-name="CLXDocumentDetails"] .upload-entry{
+	
+	    margin: 0px 45px !important;
+}

@@ -1,0 +1,73 @@
+<template>
+    <lightning-card>
+        <lightning-accordion active-section-name={section} allow-multiple-sections-open
+        onsectiontoggle={handleToggleSection}>
+            <lightning-accordion-section name="Filters" label={accordianTitle}>
+                <div class="slds-box" data-name="filter-section">
+                    <div class="slds-grid slds-gutter">
+                        <div data-name="validation-div" class="slds-col slds-p-right_small slds-size_1-of-1 slds-hide slds-align_absolute-center">
+                            <span class="validation-msg">{validationErrorMessage}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutter slds-p-left_small slds-p-right_small slds-p-bottom_small">
+                        <div class="slds-col slds-size_3-of-12">
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-p-right_small slds-p-top_x-small slds-size_1-of-1">
+                                    <label for="sDate" class="label-style">Due Start Date</label>
+                                    <lightning-input type="date" id="sDate" data-name="startDate" name="startDate" variant="label-hidden" label="Transaction Start Date" onchange={handleDateChange}></lightning-input>
+                                    <lightning-helptext content="Greater than or Equal to Due Start Date considered for the filter"></lightning-helptext>
+                                </div>
+                                <div class="slds-col slds-p-right_small slds-p-top_x-small slds-size_1-of-1">
+                                    <label for="eDate" class="label-style">Due End Date</label>
+                                    <lightning-input type="date" id="eDate" data-name="endDate" name="endDate" variant="label-hidden" label="Payment End Date" onchange={handleDateChange}></lightning-input>
+                                    <lightning-helptext content="Less than or Equal to Due End Date considered for the filter"></lightning-helptext>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center slds-size_2-of-12">
+                            <lightning-combobox name="paymentSatisfied" data-name="paymentSatisfied" label="Payment Satisfied" placeholder="Payment Satisfied" options={options} 
+                            onchange={handlePaymentSatisfiecChange} value={selectedPaymentSatisfied}>
+                            </lightning-combobox>
+                            <!--<lightning-input type="checkbox" label="Payment Satisfied" data-name="paymentSatisfied" name="paymentSatisfied" onclick={handleClick}>
+                            </lightning-input>-->
+                        </div>
+                        <div class="slds-col slds-p-left_small slds-align_absolute-center slds-size_2-of-12">
+                            <lightning-input type="number" label="Payment Amount" step=".01" data-name="paymentAmount" name="paymentAmount" onchange={handlePaymentAmountChange}></lightning-input>
+                            <lightning-helptext content="Greater than or Equal to Payment Amount considered for the filter"></lightning-helptext>
+                        </div>
+                        <div class="slds-col slds-p-left_small slds-align_absolute-center slds-size_2-of-12">
+                            <lightning-input type="number" label="Due Amount" step=".01" data-name="dueAmount" name="dueAmount" onchange={handleDueAmountChange}></lightning-input>
+                            <lightning-helptext content="Greater than or Equal to Due Amount considered for the filter"></lightning-helptext>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 slds-p-top_x-large">
+                            <div class="slds-col slds-p-left_small slds-p-top_small slds-align_absolute-center slds-size_1-of-1">
+                                <lightning-button variant="brand" label="Apply Filter" disabled={disableApplyButton} onclick={handleApplyClick} class="slds-m-left_x-small"></lightning-button>
+                            </div>
+                            <div class="slds-col slds-p-left_small slds-p-top_small slds-align_absolute-center slds-size_1-of-1">
+                                <lightning-button variant="brand" label="Clear Filter" onclick={handleClearClick} class="slds-m-left_x-small"></lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning-accordion-section>
+        </lightning-accordion>
+        <div class="slds-p-around_small">
+            <div class="slds-box design">
+                <template if:true={billsList}>
+                    <div style="height:200px">
+                        <lightning-datatable data={billsList} columns={columns} key-field="Id"
+                        enable-infinite-loading={enableInfiniteLoading} onloadmore={loadMoreData} hide-checkbox-column="true"
+                        show-row-number-column="false" sorted-by={sortBy} sorted-direction={sortDirection} onsort={doSorting}>
+                        </lightning-datatable>
+                        <div class="slds-align_absolute-center">
+                            {loadMoreStatus}
+                        </div>
+                    </div>
+                </template>
+                <template if:true={error}>
+                    {error}
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,48 @@
+<apex:page >
+  <script type="">
+            ((portalext, $)=> {
+                portalext.setDisableTimer = (e) => {
+                     let startCountDown  = 59;
+                     let timer = setInterval(function() {
+                     $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2) span span").text(`Resend (${--startCountDown})`);
+                        if(startCountDown  == 0){
+                        clearInterval(timer);
+                        }
+                    }, 1000);
+                    $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2)").attr('disabled',true);
+                    $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2)").addClass('Mui-disabled Mui-disabled');
+                    setTimeout(function(){ 
+                        $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2) span span").text(`Resend`);
+                        $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2)").removeClass('Mui-disabled Mui-disabled');
+                        $("[data-style-actor-name='redrawPaymentOTP'] .toolbar-at-bottom button:nth-child(2)").attr('disabled',false);
+                        
+                    }, 60000);
+              };
+              portalext.downloadCSV = (csv, filename) => {
+                
+            }
+             portalext.exportTableToCSV = () => {
+                 $("table.MuiTable-root").each(function () {
+                    var $table = $(this);
+            
+                    var $button = $("<button type='button'>");
+                    $button.text("Export to spreadsheet");
+                    $button.insertAfter($table);
+            
+                    $button.click(function () {
+                        var csv = $table.table2CSV({
+                            delivery: 'value'
+                        });
+                        window.location.href = 'data:text/csv;charset=UTF-8,' 
+                        + encodeURIComponent(csv);
+                    });
+                });
+            }
+
+              portalext.printList = () => {
+                  window.print();
+              };
+            })((window.portalext = window.portalext || {}), jQuery);
+            
+        </script>
+</apex:page>

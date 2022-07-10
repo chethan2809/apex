@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+    <aura:attribute name="modes" type="List" default="[
+    {'label': 'Easy', 'value': 'easy'},
+    {'label': 'Medium', 'value': 'medium'},
+    {'label': 'Hard', 'value': 'hard'},
+    ]"/>
+    <lightning:card title="Word shuffle">
+ 
+       
+        <lightning:combobox name="progress"  value="inProgress" aura:id="gameMode" placeholder="Select Mode" onchange="{! v.modes }"/>
+        <lightning:button variant="brand" aura:id="startGame" label="Start new game" title="Start new game" onclick="{!c.newGameClick}"></lightning:button>
+        <lightning:button label="Reshuffle" title="Reshuffle" onclick="{!c.reshuffleClick}"></lightning:button>
+        
+            
+        <!-- <aura:attribute name="chethu" type="string" access="global" required="true"></aura:attribute> -->
+        <!-- <aura:attribute name="chethu" type="string" access="global" required="true"/> -->
+    </lightning:card>
+
+</aura:component>

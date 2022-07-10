@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Related Contacts">
+        <!-- <div class="slds-p-right_small slds-float_right">
+            <lightning-button variant="brand" label="New Contact"
+                onclick={navigateToNewContactPage} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <br/><br/> -->
+        <div class="slds-box design slds-box design slds-m-around_small">
+        <template if:true={relatedContactsList}>
+            <div style="height:200px">
+                <lightning-datatable data={relatedContactsList} columns={columns} key-field="Id"
+                hide-checkbox-column="true" show-row-number-column="false" sorted-by={sortBy} sorted-direction={sortDirection} onsort={doSorting}>
+                </lightning-datatable>
+            </div>
+        </template>
+        <template if:true={error}>
+            {error}
+        </template>
+    </div>
+    </lightning-card>
+</template>

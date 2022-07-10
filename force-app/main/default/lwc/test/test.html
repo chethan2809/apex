@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Name form">
+    <lightning-input type="text" label="Name" placeholder="type here..."></lightning-input>
+    <template if:true={disable}>
+    <lightning-input type="text" label="City" placeholder="type here..." ></lightning-input>
+    </template>
+    <template if:false={disable}>
+    <lightning-input type="text" label="City" placeholder="type here..." disabled ></lightning-input>
+    </template>
+    </lightning-card>
+</template>

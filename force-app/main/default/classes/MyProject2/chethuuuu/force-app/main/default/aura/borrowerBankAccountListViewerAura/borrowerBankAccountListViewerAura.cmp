@@ -1,0 +1,4 @@
+<aura:component implements="lightning:isUrlAddressable,flexipage:availableForAllPageTypes,force:hasRecordId">
+    <c:borrowerBankAccountListViewer applicationId="{!v.pageReference.state.c__appId}" accountId="{!v.pageReference.state.c__accountId}">
+    </c:borrowerBankAccountListViewer>
+</aura:component>

@@ -1,0 +1,37 @@
+<template>
+    <div class="slds-p-around_small">
+        <div class="slds-box design">
+            <div style="height:200px">
+                <lightning-datatable key-field="id" data={fundingDetailList} show-row-number-column="false"
+                    row-number-offset={rowOffset} hide-checkbox-column="true" columns={columns}
+                    enable-infinite-loading={enableInfiniteLoading} onloadmore={loadMoreData} sorted-by={sortBy}
+                    sorted-direction={sortDirection} onsort={doSorting}>
+                </lightning-datatable>
+            </div>
+            <template if:true={loadMoreStatus}>
+                <div class="slds-align_absolute-center">
+                    {loadMoreStatus}
+                </div>
+            </template>
+        </div>
+    </div>
+    <template if:true={distributionGrandTotal}>
+        <div class="slds-grid slds-p-top_small slds-p-bottom_small">
+            <div class="slds-float_right slds-col slds-size_4-of-12">
+                &nbsp;
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-col slds-size_6-of-12 slds-float_right slds-text-title_bold slds-text-heading_small">
+                    Grand Total:&nbsp;
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-12">
+                <div class="slds-float_right slds-m-right_large slds-text-title_bold slds-text-heading_small">
+                    <lightning-formatted-number value={distributionGrandTotal} format-style="currency"
+                        currency-code="USD">
+                    </lightning-formatted-number>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

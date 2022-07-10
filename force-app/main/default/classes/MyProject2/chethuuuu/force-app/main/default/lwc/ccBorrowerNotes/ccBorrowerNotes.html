@@ -1,0 +1,73 @@
+<template>
+  <lightning-card>
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
+        </div>
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <a href="#" class="slds-card__header-link slds-truncate" title="Notes">
+              <span>Notes ({notesCount})</span>
+            </a>
+          </h2>
+          <div class="slds-p-right_small slds-float_right">
+            <lightning-button variant="neutral" label="New" onclick={handleNewClick} class="slds-m-left_x-small">
+            </lightning-button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <template for:each={borrowerNotesList} for:item="note">
+        <div key={note.id}>
+          <div class="slds-grid slds-wrap slds-p-top_small">
+            <div class="slds-col slds-size_1-of-1 slds-p-left_small slds-p-bottom_xxx-small">
+              {note.ContentDocument.Title}
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-p-left_small text-preview slds-p-bottom_xxx-small">
+              {note.ContentDocument.LatestPublishedVersion.TextPreview}
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-p-left_small">
+              <lightning-formatted-date-time value={note.ContentDocument.CreatedDate} year="numeric" month="numeric"
+                day="numeric" hour="2-digit" minute="2-digit" hour12="true">
+              </lightning-formatted-date-time>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+  <template if:true={showDialog}>
+    <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+      <div class="slds-modal__container">
+        <div class="slds-modal__header">
+          <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick={closeModel}>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2 id="header99" class="slds-text-heading--medium">Creating Custom Note</h2>
+        </div>
+        <div class="slds-modal__content slds-p-around--medium">
+          <div class="slds-page-header">
+            <div class="slds-media">
+              <div class="slds-media__body">
+                <div class="slds-align_absolute-center">
+                  <h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Requests User Guides">New
+                    Note</h1>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="slds-modal__footer">
+            <div class="col-md-4 text-center">
+              <lightning-button variant="brand" label="Save" onclick={handleSaveClick} class="slds-m-left_x-small">
+              </lightning-button>
+              <lightning-button variant="neutral" label="Cancel" onclick={handleCloseClick} class="slds-m-left_x-small">
+              </lightning-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+</template>

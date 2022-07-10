@@ -1,0 +1,19 @@
+<template>
+  <div class="spinner">
+    <template if:true={isLoading}>
+      <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+      </lightning-spinner>
+    </template>
+  </div>
+
+  <lightning-quick-action-panel title="Quick Action Title">
+    <div class="slds-text-heading_small"> Are you sure , You want to payout this charge ?</div>
+
+    <footer class="slds-modal__footer">
+      <lightning-button variant="neutral" label="Cancel" onclick={closeAction} class="slds-m-left_x-small">
+      </lightning-button>
+      <lightning-button variant="brand" label="Save" onclick={handleClick} class="slds-m-left_x-small">
+      </lightning-button>
+    </footer>
+  </lightning-quick-action-panel>
+</template>

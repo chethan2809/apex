@@ -1,0 +1,16 @@
+.form-bgcolor{
+    background: rgb(255, 255, 255);
+}
+
+.custom-slds-box{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.font-header{
+    font-weight: bold;
+    color: #0070d2;
+    font-size: 18px;
+}

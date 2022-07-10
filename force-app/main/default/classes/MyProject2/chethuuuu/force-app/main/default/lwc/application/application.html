@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="APPLICATION FORM" icon-name="standard:contact">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="First name" placeholder="type here...">{firstname}</lightning-input>
+            <lightning-input type="text" label="Last Name" placeholder="type here..." required></lightning-input>
+            <lightning-input type="text" label="Number " placeholder="type here..." ></lightning-input>
+            <lightning-input-address
+                street-label="Street"
+                city-label="City"
+                country-label="Country"
+                province-label="Province"
+                postal-code-label="PostalCode"
+                street="121 Spear St."
+                city="San Francisco"
+                country="US"
+                province="CA"
+                postal-code="94105"></lightning-input-address>
+        </div>
+        <div class="slds-m-top_small slds-m-bottom_medium">
+            <lightning-button variant="brand" label="Save"></lightning-button>
+            <lightning-button variant="Neutral" label="Cancel"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,32 @@
+<template>
+    <lightning-card>
+        <header class="slds-modal__header">
+            <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Change Collector</h2>
+        </header>
+        <div class="form-bgcolor slds-var-p-around_small">
+            <div class="slds-p-bottom_small slds-p-around_small">
+                <div class="slds-grid slds-wrap slds-gutters slds-p-around_small">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox label="Queue" data-id="Queue" options={options}
+                            value={queue} required disabled>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox label="Collector" data-id="Collector" options={userList}
+                            value={collectorId} required>
+                        </lightning-combobox>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-align_absolute-center slds-p-around_small">
+                <lightning-button variant="brand" name="save" label="Save" onclick={changeCollector}
+                    disabled={disableSaveButton}>
+                </lightning-button>
+                <div class="slds-p-left_small">
+                    <lightning-button class="slds-m-top_small" variant="brand" name="close" label="Close" onclick={closeModal}>
+                    </lightning-button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,106 @@
+<template>
+    <template if:true={isError}>
+        <c-error-panel errors={errors}></c-error-panel>
+    </template>
+    <template if:true={isLoading}>
+        <div>
+            <lightning-spinner class="slds-is-fixed" alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-card class="slds-p-around_small">
+        <div class="slds-p-right_small slds-float_right">
+            <lightning-button variant="brand" label="Back To Application" onclick={backToApplication}
+                icon-name="utility:back" class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="New Bank Account" onclick={handleCreateBankAccount}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+
+        <div class="slds-grid slds-gutters slds-p-left_small">
+            <div class="slds-col">
+                <lightning-input class="font-header" type="text" label="Application Name" value={applicationName} readonly></lightning-input>
+            </div>
+            <div class="slds-col">
+                <lightning-input class="font-header" type="text" label="Borrower Name" value={borrowerName} readonly></lightning-input>
+            </div>
+            <div class="slds-col">
+                <lightning-input class="font-header" type="text" label="Linked Bank Account" value={bankAccountName} readonly></lightning-input>
+            </div>
+        </div>
+
+        <div class="slds-p-around_small">
+            <div class="custom-slds-box">
+                <div class="tableClass">
+                    <lightning-datatable key-field="Id" data={tableData} columns={bankAccountListColumns}
+                        hide-checkbox-column="true" draft-values={draftValues} onrowaction={handleRowAction}
+                        onsave={onUpdateBankAccount}>
+                    </lightning-datatable>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+
+    <template if:true={showNewBankModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium" aria-labelledby="modal-heading-01"
+            aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <div if:true={isLoading}>
+                    <lightning-spinner class="slds-is-fixed" alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+                </div>
+                <header class="slds-modal__header">
+                    <lightning-button-icon icon-name="utility:close" class="slds-float_right" onclick={closeModal}
+                        alternative-text="close"></lightning-button-icon>
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">New Bank Account</h2>
+                </header>
+                <div class="form-bgcolor slds-var-p-around_small">
+                    <div class="slds-p-bottom_small slds-p-around_small">
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-combobox name="accountType" label="Account Type"
+                                    placeholder="Select Account Type" options={accountTypeOptions}
+                                    onchange={onAccountTypeChange} required>
+                                </lightning-combobox>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-input label="Bank Account Number" type="text"  pattern="^([0-9]*)$"
+                                    message-when-pattern-mismatch="Only Numbers Are Allowed" name="AccountNumber" required
+                                    onchange={onAccountNumberChange}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-input label="Bank Name" type="text" name="BankName"
+                                    onchange={onBankNameChange} required>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-input label="Routing Number" type="text" pattern="^([0-9]*)$"
+                                    message-when-pattern-mismatch="Only Numbers Are Allowed" name="RoutingNumber"
+                                    onchange={onRoutingNumberChange} required></lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-dual-listbox name="AccountUsage"
+                                    label="Account Usage" source-label="Available" selected-label="Chosen"
+                                    options={accountUsageOptions} onchange={onAccountUsageChange}>
+                                </lightning-dual-listbox>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-top_small">
+                                <lightning-input label="Active" type="checkbox" name="Active"
+                                    onchange={onIsActiveChange}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_12-of-12 slds-align_absolute-center slds-p-bottom_small">
+                        <lightning-button variant="brand" data-name="submitButton" name="save" label="Save"
+                            disabled={disableSaveButton} onclick={handleSaveNewBankAccount}>
+                        </lightning-button>
+                        <div class="slds-p-left_small">
+                            <lightning-button class="slds-m-top_small" variant="brand" name="close" label="Close"
+                                onclick={closeModal}>
+                            </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

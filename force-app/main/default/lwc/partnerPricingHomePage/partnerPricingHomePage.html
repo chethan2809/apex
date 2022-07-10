@@ -1,0 +1,114 @@
+<template>
+    <template if:true={isError}>
+        <c-error-panel errors={errors}></c-error-panel>
+    </template>
+    <template if:true={isLoading}>
+        <div>
+            <lightning-spinner class="slds-is-fixed" alternative-text="Loading" size="large" variant="brand">
+            </lightning-spinner>
+        </div>
+    </template>
+    <template if:true={isValidSession}>
+        <div if:true={hasPricingRecord} class="detail">
+            <div class="slds-grid mainTitleBanner slds-grid_align-spread">
+                <div class="slds-col">
+                    <span><img class="mainTitleLogo" src={canLogoWhite}></span>
+                </div>
+                <div class="slds-col">
+                    <span class="mainTitle">LOAN CALCULATOR</span>
+                </div>
+                <div class="slds-col">
+                    <lightning-button label="Exit" variant="inverse" class="exitButton"
+                    title="Click to Exit" onclick={handleClose} icon-name="utility:logout"></lightning-button>
+                </div>
+            </div>
+            <div class="slds-col slds-grid slds-gutters slds-var-m-left_x-small slds-var-m-right_x-small slds-var-p-bottom_x-small">
+                <div class="slds-col slds-size_8-of-12 detail slds-var-p-around_small">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_4-of-12">
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col">
+                                    <span class="subTitle">Calculate Loan Offer</span>
+                                </div>
+                                <div class="slds-col slds-p-top_large">
+                                    <lightning-combobox name=" Payment_Frequency" label="Payment Frequency"
+                                        value={pricingRecord.Payment_Frequency__c} options={paymentFrequencyOption}
+                                        onchange={handleFrequencyChange}>
+                                    </lightning-combobox>
+                                </div>
+                                <div class="slds-col slds-p-top_large">
+                                    <lightning-input label="Term" name="Term" value={pricingRecord.Term__c}
+                                        type="number" step="1" onblur={handleTermChange} disabled>
+                                    </lightning-input>
+                                </div>
+                                <div class="slds-col slds-p-top_xx-large">
+                                    <lightning-input label=" Loan Amount" name="Loan_Amount"
+                                        value={pricingRecord.Selected_Amount__c} type="number" formatter="currency"
+                                        step="0.01" onblur={handleAmountChange}></lightning-input>
+                                </div>
+                                <div if:true={isNotFlatCommission} class="slds-col slds-p-top_xx-large">
+                                    <lightning-input label=" Standard Commission %" name="Standard_Commission"
+                                        value={pricingRecord.Standard_Commission__c} type="number" step="1"
+                                        disabled></lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_8-of-12 slds-p-top_xx-large">
+                            <div class="slds-grid slds-grid_vertical slds-gutters slds-var-p-around_xx-large">
+                                <div class="slds-col slds-p-top_x-large">
+                                    <c-partner-pricing-slider current-value={pricingRecord.Term__c}
+                                        min-value=6.00 max-value={pricingRecord.Maximum_Term__c}
+                                        slider-type="Term" pricing-record={pricingRecord}
+                                        onsliderchange={handleSliderChange} style="width: 100%;">
+                                    </c-partner-pricing-slider>
+                                </div>
+                                <div class="slds-col slds-p-top_large">
+                                    <c-partner-pricing-slider current-value={pricingRecord.Selected_Amount__c}
+                                        min-value=2500.000 max-value={pricingRecord.Maximum_Amount__c}
+                                        slider-type="Loan Amount" pricing-record={pricingRecord}
+                                        onsliderchange={handleSliderChange} style="width: 100%;">
+                                    </c-partner-pricing-slider>
+                                </div>
+                                <div if:true={isNotFlatCommission} class="slds-col slds-p-top_large">
+                                    <c-partner-pricing-slider current-value={pricingRecord.Standard_Commission__c}
+                                        min-value=0.00 max-value={pricingRecord.Max_Broker_Commission__c}
+                                        slider-type="Commission" pricing-record={pricingRecord}
+                                        onsliderchange={handleSliderChange} style="width: 100%;">
+                                    </c-partner-pricing-slider>
+                                </div>
+                                <div class="slds-col slds-p-top_xx-large">
+                                    <lightning-button label="SUBMIT OFFER" variant="brand" title="Click to Submit Offer"
+                                        onclick={handleSubmitOffer} class="slds-m-left_xx-large offerButton">
+                                    </lightning-button>
+                                    <lightning-button label="GENERATE DOCUMENT" variant="brand"
+                                        title="Click to Generate Offer" onclick={handleGenerateDocument}
+                                        class="slds-m-left_x-small offerButton" disabled={disableGenerateDocument}></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_4-of-12 detail slds-var-p-top_x-small slds-var-p-bottom_x-small">
+                    <c-partner-pricing-summary application-name={applicationRecord.Name} borrower-name={borrowerName}
+                        pricing-record={pricingRecord}>
+                    </c-partner-pricing-summary>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template if:false={isValidSession}>
+        <div class="slds-notify slds-notify_alert slds-alert_warning">
+            <span class="slds-assistive-text">warning</span>
+            <h1>Something went wrong, Please Contact CAN Capital for more information.</h1>
+        </div>
+
+        <lightning-card variant="Narrow">
+            <div class="slds-p-left_small">
+                <lightning-button class="slds-m-top_small" variant="brand" name="close" label="Close"
+                    onclick={handleClose}>
+                </lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+</template>

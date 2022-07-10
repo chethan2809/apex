@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="compName" type="String"/>
+    <aura:attribute name="amount" type="integer"/>
+    <aura:attribute name="rate" type="integer"/>
+    <aura:attribute name="year" type="integer"/>
+    <aura:attribute name="interest" type="decimal"/>
+    <aura:attribute name="finalamount" type="integer"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.calculateInterest}"/>
+    company name:{!v.compname}<br/>
+    amount:{!v.amount}<br/>
+    rate:{!v.rate}<br/>
+    year:{!v.year}<br/>
+    Total interest:{!v.interest}<br/>
+    Final amount:{!v.finalamount}
+    
+    
+</aura:component>

@@ -1,0 +1,51 @@
+<template>
+    <template if:true={sliderType}>
+        <div class="slds-grid">
+            <div class="slds-col">
+                <div class="range">
+                    <div class="sliderValue">
+                        <span>
+                            {currentValue}
+                        </span>
+                    </div>
+                    <div class="field" if:true={isTerm} >
+                        <div class="term value left">
+                            <lightning-formatted-number value={minValue} format-style="decimal" maximum-fraction-digits="2">
+                            </lightning-formatted-number>
+                        </div>
+                        <input type="range" min={minValue} max={maxValue} value={currentValue} step="1" name="termInput"
+                            onchange={handleSliderChange} oninput={handleSliderDrag}>
+                        <div class="term value right">
+                            <lightning-formatted-number value={maxValue} format-style="decimal" maximum-fraction-digits="2">
+                            </lightning-formatted-number>
+                        </div>
+                    </div>
+                    <div class="field" if:true={isLoanAmount}>
+                        <div class="value left">
+                            <lightning-formatted-number value={minValue} format-style="currency" currency-code="USD" maximum-fraction-digits="2">
+                            </lightning-formatted-number>
+                        </div>
+                        <input type="range" min={minValue} max={maxValue} value={currentValue} step="0.01" name="loanAmountInput"
+                            onchange={handleSliderChange} oninput={handleSliderDrag}>
+                        <div class="value right">
+                            <lightning-formatted-number value={maxValue} format-style="currency" currency-code="USD" maximum-fraction-digits="2">
+                            </lightning-formatted-number>
+                        </div>
+                    </div>
+                    <div class="field" if:true={isCommission}>
+                        <div class="commission value left">
+                            <lightning-formatted-number value={minValue}  format-style="decimal" maximum-fraction-digits="2">
+                            </lightning-formatted-number>%
+                        </div>
+                        <input type="range" min={minValue} max={maxValue} value={currentValue} step="1" name="commissionInput"
+                            onchange={handleSliderChange} oninput={handleSliderDrag}>
+                        <div class="commission value right">
+                            <lightning-formatted-number value={maxValue} format-style="decimal" maximum-fraction-digits="2">
+                            </lightning-formatted-number>%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

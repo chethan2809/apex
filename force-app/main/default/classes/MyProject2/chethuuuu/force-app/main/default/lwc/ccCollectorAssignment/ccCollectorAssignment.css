@@ -1,0 +1,13 @@
+.form-bgcolor{
+    background-color: #ffff;
+}
+
+.slds-modal__content {
+    height : 300px!important;
+}
+
+.uiModal--horizontalForm .modal-container {
+    width: 80%!important;
+    max-width: none!important;
+    min-width: 480px!important;
+}
